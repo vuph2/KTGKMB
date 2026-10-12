@@ -3270,3 +3270,817 @@ Error Number:547,State:0,Class:16
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 INFO  2026-10-12 13:35:22,689 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Delete/3 - 500 - text/html;+charset=utf-8 105.8530ms
+DEBUG 2026-10-12 13:37:54,062 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-10-12 13:37:54,068 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-10-12 13:37:54,073 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.Web.Startup.KTGKMDWebMvcModule, KTGKMD.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,073 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDWebCoreModule, KTGKMD.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDApplicationModule, KTGKMD.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDCoreModule, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,074 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.EntityFrameworkCore.KTGKMDEntityFrameworkModule, KTGKMD.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,075 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,075 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,075 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,075 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,075 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,075 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,076 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-10-12 13:37:54,093 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:37:54,093 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:37:54,093 [2    ] o.Configuration.LanguageManagementConfig - Converted KTGKMD (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:37:54,093 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:37:54,214 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: KTGKMD.EntityFrameworkCore.KTGKMDDbContext, KTGKMD.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:37:54,291 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-10-12 13:37:54,310 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-10-12 13:37:54,313 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-10-12 13:37:54,315 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: KTGKMD
+DEBUG 2026-10-12 13:37:54,319 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-10-12 13:37:54,323 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-10-12 13:37:54,325 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[KTGKMD.MultiTenancy.Tenant, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[KTGKMD.Authorization.Users.User, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-10-12 13:37:54,333 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2026-10-12 13:37:54,333 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Users.Dto.CreateUserDto
+DEBUG 2026-10-12 13:37:54,334 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Users.Dto.UserDto
+DEBUG 2026-10-12 13:37:54,334 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-10-12 13:37:54,334 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-10-12 13:37:54,335 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Roles.Dto.PermissionDto
+DEBUG 2026-10-12 13:37:54,335 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-10-12 13:37:54,335 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.MultiTenancy.Dto.TenantDto
+DEBUG 2026-10-12 13:37:54,335 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2026-10-12 13:37:54,335 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Web.Models.Roles.EditRoleModalViewModel
+INFO  2026-10-12 13:37:55,314 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2026-10-12 13:37:55,418 [2    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:5000
+INFO  2026-10-12 13:37:55,418 [2    ] Microsoft.Hosting.Lifetime               - Now listening on: https://localhost:44312
+INFO  2026-10-12 13:37:55,419 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-10-12 13:37:55,419 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-10-12 13:37:55,419 [2    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Users\len\OneDrive\Documents\KTGK\Backend\src\KTGKMD.Web.Mvc
+INFO  2026-10-12 13:38:22,566 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams - - -
+INFO  2026-10-12 13:38:22,574 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:38:22,605 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:22,631 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAllExams", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[KTGKMD.Exams.Dto.ExamDto]]] GetAllExams() on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:22,634 [11   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:22,774 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:38:22,799 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc) in 160.4217ms
+INFO  2026-10-12 13:38:22,799 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:22,802 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams - 200 - application/json;+charset=utf-8 235.7132ms
+INFO  2026-10-12 13:38:28,992 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/ - - -
+INFO  2026-10-12 13:38:28,993 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.HomeController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:29,000 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller KTGKMD.Web.Controllers.HomeController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:29,017 [11   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:38:29,017 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.HomeController.Index (KTGKMD.Web.Mvc) in 17.1819ms
+INFO  2026-10-12 13:38:29,017 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.HomeController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:29,017 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/ - 302 0 - 25.7975ms
+INFO  2026-10-12 13:38:29,019 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:38:29,021 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:29,023 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:29,023 [11   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:29,046 [11   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:38:29,068 [11   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 24.0998ms.
+INFO  2026-10-12 13:38:29,068 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 45.3187ms
+INFO  2026-10-12 13:38:29,068 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:29,069 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 49.4153ms
+INFO  2026-10-12 13:38:29,955 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - - -
+INFO  2026-10-12 13:38:29,956 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 - 1.6544ms
+INFO  2026-10-12 13:38:29,957 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+INFO  2026-10-12 13:38:37,795 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/Delete/3 - application/x-www-form-urlencoded 0
+INFO  2026-10-12 13:38:37,796 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:38:37,797 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:37,802 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Delete", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:37,803 [11   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:38,520 [17   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:38:38,521 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc) in 719.0192ms
+INFO  2026-10-12 13:38:38,522 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:38,522 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Delete/3 - 302 0 - 726.3251ms
+INFO  2026-10-12 13:38:38,523 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:38:38,524 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:38,524 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:38,524 [17   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:38,529 [18   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:38:38,532 [18   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2.5979ms.
+INFO  2026-10-12 13:38:38,532 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 7.2764ms
+INFO  2026-10-12 13:38:38,532 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:38,532 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 8.6158ms
+INFO  2026-10-12 13:38:42,153 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/Delete/2 - application/x-www-form-urlencoded 0
+INFO  2026-10-12 13:38:42,154 [18   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:38:42,154 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:42,155 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Delete", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:42,155 [18   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:42,648 [11   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:38:42,649 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc) in 493.5717ms
+INFO  2026-10-12 13:38:42,649 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:42,649 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Delete/2 - 302 0 - 495.5351ms
+INFO  2026-10-12 13:38:42,650 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:38:42,651 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:42,651 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:42,651 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:42,655 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:38:42,655 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.4595ms.
+INFO  2026-10-12 13:38:42,655 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 4.1674ms
+INFO  2026-10-12 13:38:42,655 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:42,655 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 5.2149ms
+INFO  2026-10-12 13:38:44,115 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Upload - - -
+INFO  2026-10-12 13:38:44,116 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:44,118 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:38:44,118 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:38:44,123 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Upload.
+INFO  2026-10-12 13:38:44,128 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Upload executed in 4.856ms.
+INFO  2026-10-12 13:38:44,128 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 9.65ms
+INFO  2026-10-12 13:38:44,128 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:38:44,128 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Upload - 200 - text/html;+charset=utf-8 12.5371ms
+INFO  2026-10-12 13:39:41,231 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/Upload - multipart/form-data;+boundary=----WebKitFormBoundary7eaSMFkB1D9CZ5wt 30299
+INFO  2026-10-12 13:39:41,232 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:39:41,232 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:39:41,238 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:39:41,239 [17   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:39:42,051 [17   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:39:42,051 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 812.5145ms
+INFO  2026-10-12 13:39:42,051 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:39:42,051 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Upload - 302 0 - 820.1883ms
+INFO  2026-10-12 13:39:42,053 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:39:42,054 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:39:42,054 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:39:42,055 [15   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:39:42,059 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:39:42,060 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.5051ms.
+INFO  2026-10-12 13:39:42,060 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 5.39ms
+INFO  2026-10-12 13:39:42,060 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:39:42,060 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 6.7420ms
+INFO  2026-10-12 13:39:43,372 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Edit/4 - - -
+INFO  2026-10-12 13:39:43,373 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:39:43,381 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Edit", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:39:43,381 [15   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+WARN  2026-10-12 13:39:43,496 [15   ] Microsoft.EntityFrameworkCore.Query      - Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+INFO  2026-10-12 13:39:43,602 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Edit.
+INFO  2026-10-12 13:39:43,647 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Edit executed in 45.758ms.
+INFO  2026-10-12 13:39:43,649 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc) in 267.9427ms
+INFO  2026-10-12 13:39:43,649 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:39:43,649 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Edit/4 - 200 - text/html;+charset=utf-8 276.6512ms
+INFO  2026-10-12 13:40:20,950 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:40:20,950 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:20,951 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:20,951 [17   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:20,956 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:40:20,957 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.4124ms.
+INFO  2026-10-12 13:40:20,957 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 5.8732ms
+INFO  2026-10-12 13:40:20,957 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:20,957 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 7.3536ms
+INFO  2026-10-12 13:40:23,125 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Preview/4 - - -
+INFO  2026-10-12 13:40:23,126 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:23,132 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Preview", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Preview(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:23,132 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:23,152 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Preview.
+INFO  2026-10-12 13:40:23,162 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Preview executed in 11.1585ms.
+INFO  2026-10-12 13:40:23,163 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc) in 30.3022ms
+INFO  2026-10-12 13:40:23,163 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:23,163 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Preview/4 - 200 - text/html;+charset=utf-8 37.3616ms
+INFO  2026-10-12 13:40:31,297 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Upload - - -
+INFO  2026-10-12 13:40:31,298 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:31,298 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:31,299 [20   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:31,303 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Upload.
+INFO  2026-10-12 13:40:31,304 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Upload executed in 1.472ms.
+INFO  2026-10-12 13:40:31,304 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 5.9804ms
+INFO  2026-10-12 13:40:31,305 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:31,305 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Upload - 200 - text/html;+charset=utf-8 7.3141ms
+INFO  2026-10-12 13:40:35,084 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/Upload - multipart/form-data;+boundary=----WebKitFormBoundaryBwxGrem59pKyXitp 30541
+INFO  2026-10-12 13:40:35,084 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:40:35,084 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:35,085 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:35,085 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:35,298 [22   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:40:35,298 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 212.861ms
+INFO  2026-10-12 13:40:35,298 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:35,298 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Upload - 302 0 - 214.3076ms
+INFO  2026-10-12 13:40:35,300 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:40:35,300 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:35,300 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:35,300 [17   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:35,304 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:40:35,305 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.4224ms.
+INFO  2026-10-12 13:40:35,305 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 4.1449ms
+INFO  2026-10-12 13:40:35,305 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:35,305 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 5.0702ms
+INFO  2026-10-12 13:40:37,290 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Edit/5 - - -
+INFO  2026-10-12 13:40:37,290 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:37,291 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Edit", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:37,291 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:37,314 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Edit.
+INFO  2026-10-12 13:40:37,316 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Edit executed in 2.1959ms.
+INFO  2026-10-12 13:40:37,317 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc) in 25.7174ms
+INFO  2026-10-12 13:40:37,317 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:37,317 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Edit/5 - 200 - text/html;+charset=utf-8 27.1027ms
+INFO  2026-10-12 13:40:53,098 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/Delete/5 - application/x-www-form-urlencoded 0
+INFO  2026-10-12 13:40:53,099 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:40:53,099 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:53,100 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Delete", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:53,100 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:53,836 [17   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:40:53,836 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc) in 736.0523ms
+INFO  2026-10-12 13:40:53,836 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Delete (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:53,837 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Delete/5 - 302 0 - 738.5343ms
+INFO  2026-10-12 13:40:53,838 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:40:53,839 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:53,841 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:40:53,842 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:40:53,850 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:40:53,852 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1.4214ms.
+INFO  2026-10-12 13:40:53,852 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 10.4707ms
+INFO  2026-10-12 13:40:53,852 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:40:53,852 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 13.7993ms
+INFO  2026-10-12 13:41:00,038 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams - - -
+INFO  2026-10-12 13:41:00,038 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:00,039 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:00,040 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAllExams", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[KTGKMD.Exams.Dto.ExamDto]]] GetAllExams() on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:00,040 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:00,049 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:00,050 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc) in 9.1721ms
+INFO  2026-10-12 13:41:00,050 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:00,050 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams - 200 - application/json;+charset=utf-8 11.9194ms
+INFO  2026-10-12 13:41:06,528 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams/4 - - -
+INFO  2026-10-12 13:41:06,529 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:06,529 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:06,536 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetExamDetail", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.ExamDetailDto]] GetExamDetail(Int32) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:06,536 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:06,578 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:06,593 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc) in 57.0581ms
+INFO  2026-10-12 13:41:06,593 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:06,593 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams/4 - 200 - application/json;+charset=utf-8 64.9008ms
+INFO  2026-10-12 13:41:08,766 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/start - - -
+INFO  2026-10-12 13:41:08,766 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:08,767 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/start - 204 - - 1.2696ms
+INFO  2026-10-12 13:41:08,768 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/start - application/json 12
+INFO  2026-10-12 13:41:08,768 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:08,770 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.StartAttempt (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:08,777 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "StartAttempt", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.ExamAttemptDto]] StartAttempt(KTGKMD.Exams.Dto.StartAttemptInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:08,777 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:08,805 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:08,808 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.StartAttempt (KTGKMD.Web.Mvc) in 30.3362ms
+INFO  2026-10-12 13:41:08,808 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.StartAttempt (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:08,808 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/start - 200 - application/json;+charset=utf-8 39.8451ms
+INFO  2026-10-12 13:41:15,245 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:41:15,246 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:15,246 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.6673ms
+INFO  2026-10-12 13:41:15,247 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:15,247 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:15,247 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:15,253 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:15,253 [24   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:15,312 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:15,322 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 68.5806ms
+INFO  2026-10-12 13:41:15,322 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:15,322 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 75.1770ms
+INFO  2026-10-12 13:41:16,367 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:16,368 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:16,368 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:16,370 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:16,370 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:16,379 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:16,379 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 9.7224ms
+INFO  2026-10-12 13:41:16,379 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:16,379 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 12.0063ms
+INFO  2026-10-12 13:41:17,700 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:17,700 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:17,701 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:17,703 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:17,703 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:17,711 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:17,712 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 8.859ms
+INFO  2026-10-12 13:41:17,712 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:17,712 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 11.8115ms
+INFO  2026-10-12 13:41:22,414 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:41:22,415 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:22,415 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.7312ms
+INFO  2026-10-12 13:41:22,416 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:22,416 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:22,416 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:22,418 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:22,418 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:22,429 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:22,430 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 11.6094ms
+INFO  2026-10-12 13:41:22,430 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:22,430 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 14.2647ms
+INFO  2026-10-12 13:41:23,485 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:23,485 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:23,485 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:23,488 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:23,488 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:23,497 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:23,498 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 9.8457ms
+INFO  2026-10-12 13:41:23,498 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:23,498 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 13.0844ms
+INFO  2026-10-12 13:41:24,817 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:24,817 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:24,818 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:24,819 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:24,820 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:24,832 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:24,832 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 12.4738ms
+INFO  2026-10-12 13:41:24,832 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:24,832 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 15.4952ms
+INFO  2026-10-12 13:41:25,848 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:25,849 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:25,849 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:25,851 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:25,851 [24   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:25,860 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:25,861 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 9.9158ms
+INFO  2026-10-12 13:41:25,861 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:25,861 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 12.6262ms
+INFO  2026-10-12 13:41:25,917 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:25,917 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:25,918 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:25,920 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:25,920 [24   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:25,940 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:25,940 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 20.2969ms
+INFO  2026-10-12 13:41:25,940 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:25,940 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 23.3036ms
+INFO  2026-10-12 13:41:27,793 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:41:27,793 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:27,793 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.4670ms
+INFO  2026-10-12 13:41:27,794 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:27,794 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:27,795 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:27,797 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:27,797 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:27,810 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:27,811 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 13.8466ms
+INFO  2026-10-12 13:41:27,811 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:27,811 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 16.6812ms
+INFO  2026-10-12 13:41:29,045 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:29,045 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:29,046 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:29,048 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:29,048 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:29,060 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:29,061 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 12.4215ms
+INFO  2026-10-12 13:41:29,061 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:29,061 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 15.8902ms
+INFO  2026-10-12 13:41:30,200 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:30,201 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:30,201 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:30,203 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:30,203 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:30,215 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:30,215 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 12.211ms
+INFO  2026-10-12 13:41:30,215 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:30,216 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 15.4762ms
+INFO  2026-10-12 13:41:31,462 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:31,462 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:31,463 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:31,465 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:31,465 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:31,476 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:31,477 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 11.8443ms
+INFO  2026-10-12 13:41:31,477 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:31,477 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 14.9685ms
+INFO  2026-10-12 13:41:32,994 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:41:32,994 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:32,994 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.5062ms
+INFO  2026-10-12 13:41:32,995 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:32,995 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:32,996 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:32,998 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:32,999 [24   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:33,010 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:33,011 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 12.2374ms
+INFO  2026-10-12 13:41:33,011 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:33,011 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 15.4474ms
+INFO  2026-10-12 13:41:37,085 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:37,085 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:37,086 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:37,088 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:37,088 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:37,099 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:37,099 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 11.3955ms
+INFO  2026-10-12 13:41:37,099 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:37,099 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 14.0532ms
+INFO  2026-10-12 13:41:40,057 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:41:40,057 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:40,057 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.4986ms
+INFO  2026-10-12 13:41:40,058 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:40,058 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:40,059 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:40,061 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:40,061 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:40,074 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:40,074 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 13.338ms
+INFO  2026-10-12 13:41:40,074 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:40,075 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 16.4553ms
+INFO  2026-10-12 13:41:41,190 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:41:41,191 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:41,191 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:41,192 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:41,192 [16   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:41:41,204 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:41,204 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 12.183ms
+INFO  2026-10-12 13:41:41,204 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:41,205 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 14.1860ms
+INFO  2026-10-12 13:41:44,831 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/submit - - -
+INFO  2026-10-12 13:41:44,831 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:44,831 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/submit - 204 - - 0.4580ms
+INFO  2026-10-12 13:41:44,832 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/submit - application/json 651
+INFO  2026-10-12 13:41:44,832 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:41:44,833 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SubmitExam (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:44,838 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SubmitExam", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.SubmitExamResultDto]] SubmitExam(KTGKMD.Exams.Dto.SubmitExamInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:41:44,839 [24   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+WARN  2026-10-12 13:41:44,875 [24   ] Microsoft.EntityFrameworkCore.Query      - Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+INFO  2026-10-12 13:41:45,040 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:41:45,042 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SubmitExam (KTGKMD.Web.Mvc) in 203.1558ms
+INFO  2026-10-12 13:41:45,042 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SubmitExam (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:41:45,042 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/submit - 200 - application/json;+charset=utf-8 209.8017ms
+INFO  2026-10-12 13:42:35,048 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams/4 - - -
+INFO  2026-10-12 13:42:35,048 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:42:35,049 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:42:35,050 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetExamDetail", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.ExamDetailDto]] GetExamDetail(Int32) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:42:35,050 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:42:35,082 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:42:35,084 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc) in 33.5619ms
+INFO  2026-10-12 13:42:35,084 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:42:35,084 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams/4 - 200 - application/json;+charset=utf-8 36.0118ms
+INFO  2026-10-12 13:42:44,797 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Upload - - -
+INFO  2026-10-12 13:42:44,798 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:42:44,799 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:42:44,799 [22   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:42:44,804 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Upload.
+INFO  2026-10-12 13:42:44,805 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Upload executed in 1.2609ms.
+INFO  2026-10-12 13:42:44,805 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 6.4562ms
+INFO  2026-10-12 13:42:44,805 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:42:44,806 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Upload - 200 - text/html;+charset=utf-8 8.4390ms
+INFO  2026-10-12 13:46:18,345 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:46:18,345 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:46:18,346 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:46:18,347 [29   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:46:18,352 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:46:18,352 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.4763ms.
+INFO  2026-10-12 13:46:18,352 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 5.6072ms
+INFO  2026-10-12 13:46:18,352 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:46:18,352 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 7.4361ms
+INFO  2026-10-12 13:46:31,595 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams - - -
+INFO  2026-10-12 13:46:31,596 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:46:31,596 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:46:31,597 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAllExams", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[KTGKMD.Exams.Dto.ExamDto]]] GetAllExams() on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:46:31,597 [29   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:46:31,600 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:46:31,600 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc) in 3.3813ms
+INFO  2026-10-12 13:46:31,600 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:46:31,600 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams - 200 - application/json;+charset=utf-8 4.9908ms
+INFO  2026-10-12 13:46:35,456 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:46:35,457 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:46:35,457 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:46:35,457 [29   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:46:35,465 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:46:35,465 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.5715ms.
+INFO  2026-10-12 13:46:35,465 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 7.9958ms
+INFO  2026-10-12 13:46:35,465 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:46:35,465 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 9.0106ms
+INFO  2026-10-12 13:47:11,660 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Upload - - -
+INFO  2026-10-12 13:47:11,660 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:11,661 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:11,661 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:11,664 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Upload.
+INFO  2026-10-12 13:47:11,664 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Upload executed in 0.7134ms.
+INFO  2026-10-12 13:47:11,664 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 3.3452ms
+INFO  2026-10-12 13:47:11,664 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:11,664 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Upload - 200 - text/html;+charset=utf-8 4.4160ms
+INFO  2026-10-12 13:47:16,258 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/Upload - multipart/form-data;+boundary=----WebKitFormBoundaryQeLrmzqw9MomvYJd 30541
+INFO  2026-10-12 13:47:16,258 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:16,258 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:16,259 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Upload", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:16,259 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:16,447 [31   ] ft.AspNetCore.Mvc.RedirectToActionResult - Executing RedirectResult, redirecting to /Exams.
+INFO  2026-10-12 13:47:16,447 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc) in 187.8225ms
+INFO  2026-10-12 13:47:16,447 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Upload (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:16,447 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/Upload - 302 0 - 188.9931ms
+INFO  2026-10-12 13:47:16,449 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams - - -
+INFO  2026-10-12 13:47:16,449 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:16,450 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:16,450 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:16,454 [31   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-10-12 13:47:16,455 [31   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 0.6668ms.
+INFO  2026-10-12 13:47:16,455 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc) in 5.0025ms
+INFO  2026-10-12 13:47:16,455 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Index (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:16,455 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams - 200 - text/html;+charset=utf-8 5.8709ms
+INFO  2026-10-12 13:47:18,701 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Preview/6 - - -
+INFO  2026-10-12 13:47:18,701 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:18,702 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Preview", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Preview(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:18,702 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:18,722 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Preview.
+INFO  2026-10-12 13:47:18,724 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Preview executed in 2.5705ms.
+INFO  2026-10-12 13:47:18,724 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc) in 22.4421ms
+INFO  2026-10-12 13:47:18,724 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:18,725 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Preview/6 - 200 - text/html;+charset=utf-8 23.7583ms
+INFO  2026-10-12 13:47:29,057 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Edit/6 - - -
+INFO  2026-10-12 13:47:29,057 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:29,058 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Edit", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:29,058 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:29,074 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Edit.
+INFO  2026-10-12 13:47:29,076 [28   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Edit executed in 1.6118ms.
+INFO  2026-10-12 13:47:29,076 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc) in 18.0888ms
+INFO  2026-10-12 13:47:29,076 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Edit (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:29,076 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Edit/6 - 200 - text/html;+charset=utf-8 19.3669ms
+INFO  2026-10-12 13:47:35,152 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 349
+INFO  2026-10-12 13:47:35,152 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:35,152 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:35,154 [28   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:35,154 [28   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:35,184 [28   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:35,185 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 31.0206ms
+INFO  2026-10-12 13:47:35,185 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:35,185 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 33.3626ms
+INFO  2026-10-12 13:47:41,413 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 356
+INFO  2026-10-12 13:47:41,414 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:41,414 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:41,415 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:41,415 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:41,430 [31   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:41,430 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 14.9779ms
+INFO  2026-10-12 13:47:41,430 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:41,430 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 16.5858ms
+INFO  2026-10-12 13:47:43,289 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 356
+INFO  2026-10-12 13:47:43,289 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:43,289 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:43,290 [28   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:43,290 [28   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:43,300 [28   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:43,300 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 10.076ms
+INFO  2026-10-12 13:47:43,300 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:43,300 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 11.5251ms
+INFO  2026-10-12 13:47:44,037 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 356
+INFO  2026-10-12 13:47:44,037 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:44,037 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:44,038 [28   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:44,038 [28   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:44,045 [28   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:44,045 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 6.6257ms
+INFO  2026-10-12 13:47:44,045 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:44,045 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 8.2550ms
+INFO  2026-10-12 13:47:47,079 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 356
+INFO  2026-10-12 13:47:47,079 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:47,079 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:47,081 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:47,082 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:47,089 [31   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:47,089 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 7.8029ms
+INFO  2026-10-12 13:47:47,089 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:47,089 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 10.1298ms
+INFO  2026-10-12 13:47:48,351 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 356
+INFO  2026-10-12 13:47:48,351 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:48,351 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:48,352 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:48,352 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:48,359 [31   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:48,359 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 7.2153ms
+INFO  2026-10-12 13:47:48,359 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:48,359 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 8.6112ms
+INFO  2026-10-12 13:47:49,050 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - application/json 356
+INFO  2026-10-12 13:47:49,050 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:47:49,051 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:49,052 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "UpdateQuestion", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateQuestion(KTGKMD.Exams.Dto.UpdateQuestionInput) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:49,053 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:49,062 [31   ] rastructure.SystemTextJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:47:49,062 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc) in 9.4333ms
+INFO  2026-10-12 13:47:49,062 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.UpdateQuestion (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:49,062 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/Exams/UpdateQuestion - 200 - application/json;+charset=utf-8 12.1085ms
+INFO  2026-10-12 13:47:50,299 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/Exams/Preview/6 - - -
+INFO  2026-10-12 13:47:50,299 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:50,300 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Preview", controller = "Exams", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Preview(Int32) on controller KTGKMD.Web.Controllers.ExamsController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:47:50,300 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:47:50,310 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Preview.
+INFO  2026-10-12 13:47:50,312 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Preview executed in 1.9561ms.
+INFO  2026-10-12 13:47:50,312 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc) in 12.2102ms
+INFO  2026-10-12 13:47:50,312 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamsController.Preview (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:47:50,312 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/Exams/Preview/6 - 200 - text/html;+charset=utf-8 13.3556ms
+INFO  2026-10-12 13:48:00,965 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams - - -
+INFO  2026-10-12 13:48:00,965 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:00,965 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:00,966 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAllExams", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[KTGKMD.Exams.Dto.ExamDto]]] GetAllExams() on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:00,967 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:00,972 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:00,972 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc) in 5.6634ms
+INFO  2026-10-12 13:48:00,972 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetAllExams (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:00,972 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams - 200 - application/json;+charset=utf-8 7.0981ms
+INFO  2026-10-12 13:48:02,738 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/api/exams/6 - - -
+INFO  2026-10-12 13:48:02,739 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:02,739 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:02,739 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetExamDetail", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.ExamDetailDto]] GetExamDetail(Int32) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:02,739 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:02,754 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:02,754 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc) in 14.9342ms
+INFO  2026-10-12 13:48:02,754 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.GetExamDetail (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:02,754 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5000/api/exams/6 - 200 - application/json;+charset=utf-8 16.0359ms
+INFO  2026-10-12 13:48:05,755 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/start - - -
+INFO  2026-10-12 13:48:05,755 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:05,755 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/start - 204 - - 0.4660ms
+INFO  2026-10-12 13:48:05,756 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/start - application/json 12
+INFO  2026-10-12 13:48:05,756 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:05,756 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.StartAttempt (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:05,757 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "StartAttempt", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.ExamAttemptDto]] StartAttempt(KTGKMD.Exams.Dto.StartAttemptInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:05,757 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:05,762 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:05,762 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.StartAttempt (KTGKMD.Web.Mvc) in 5.2751ms
+INFO  2026-10-12 13:48:05,762 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.StartAttempt (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:05,762 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/start - 200 - application/json;+charset=utf-8 6.1447ms
+INFO  2026-10-12 13:48:07,536 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:48:07,537 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:07,537 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.3223ms
+INFO  2026-10-12 13:48:07,537 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:07,538 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:07,538 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:07,539 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:07,539 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:07,547 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:07,548 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 8.5919ms
+INFO  2026-10-12 13:48:07,548 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:07,548 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 10.1510ms
+INFO  2026-10-12 13:48:08,023 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:08,023 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:08,023 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:08,024 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:08,024 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:08,031 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:08,031 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 7.0407ms
+INFO  2026-10-12 13:48:08,031 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:08,031 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.9208ms
+INFO  2026-10-12 13:48:10,569 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:10,569 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:10,569 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:10,570 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:10,570 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:10,577 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:10,577 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.8853ms
+INFO  2026-10-12 13:48:10,577 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:10,577 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 8.6651ms
+INFO  2026-10-12 13:48:12,035 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:12,035 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:12,035 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:12,036 [28   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:12,036 [28   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:12,040 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:12,040 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 4.3835ms
+INFO  2026-10-12 13:48:12,040 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:12,040 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 5.2430ms
+INFO  2026-10-12 13:48:13,619 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:48:13,619 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:13,619 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.2199ms
+INFO  2026-10-12 13:48:13,620 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:13,620 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:13,621 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:13,621 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:13,621 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:13,627 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:13,627 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.0009ms
+INFO  2026-10-12 13:48:13,627 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:13,627 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.1434ms
+INFO  2026-10-12 13:48:15,152 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:15,152 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:15,152 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:15,153 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:15,153 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:15,159 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:15,159 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.1075ms
+INFO  2026-10-12 13:48:15,159 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:15,159 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.1729ms
+INFO  2026-10-12 13:48:16,485 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:16,486 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:16,486 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:16,486 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:16,486 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:16,492 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:16,492 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 5.6082ms
+INFO  2026-10-12 13:48:16,492 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:16,492 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 6.5829ms
+INFO  2026-10-12 13:48:19,889 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:48:19,890 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:19,890 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.2885ms
+INFO  2026-10-12 13:48:19,890 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:19,891 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:19,891 [26   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:19,891 [26   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:19,891 [26   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:19,897 [26   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:19,897 [26   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.2229ms
+INFO  2026-10-12 13:48:19,897 [26   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:19,898 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.0428ms
+INFO  2026-10-12 13:48:23,105 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:23,105 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:23,105 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:23,106 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:23,106 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:23,112 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:23,112 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 5.8201ms
+INFO  2026-10-12 13:48:23,112 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:23,112 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 6.7930ms
+INFO  2026-10-12 13:48:24,799 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:24,799 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:24,799 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:24,799 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:24,799 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:24,805 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:24,805 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 5.7951ms
+INFO  2026-10-12 13:48:24,805 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:24,805 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 6.7202ms
+INFO  2026-10-12 13:48:25,934 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:48:25,934 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:25,934 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.3123ms
+INFO  2026-10-12 13:48:25,935 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:25,935 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:25,935 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:25,935 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:25,935 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:25,940 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:25,940 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 5.0543ms
+INFO  2026-10-12 13:48:25,940 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:25,940 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 5.8367ms
+INFO  2026-10-12 13:48:25,969 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:25,969 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:25,969 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:25,970 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:25,970 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:25,975 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:25,975 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 5.1851ms
+INFO  2026-10-12 13:48:25,975 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:25,975 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 6.1898ms
+INFO  2026-10-12 13:48:27,208 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:27,208 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:27,208 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:27,209 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:27,209 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:27,215 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:27,215 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.1002ms
+INFO  2026-10-12 13:48:27,215 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:27,215 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.0938ms
+INFO  2026-10-12 13:48:28,754 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:28,754 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:28,755 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:28,755 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:28,755 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:28,761 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:28,761 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.3318ms
+INFO  2026-10-12 13:48:28,761 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:28,761 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.1989ms
+INFO  2026-10-12 13:48:30,032 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:30,032 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:30,032 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:30,033 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:30,033 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:30,040 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:30,040 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 7.079ms
+INFO  2026-10-12 13:48:30,040 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:30,040 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 8.2777ms
+INFO  2026-10-12 13:48:30,083 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:30,083 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:30,083 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:30,084 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:30,084 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:30,088 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:30,089 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 4.9702ms
+INFO  2026-10-12 13:48:30,089 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:30,089 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 5.7971ms
+INFO  2026-10-12 13:48:31,748 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:48:31,748 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:31,748 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.2005ms
+INFO  2026-10-12 13:48:31,749 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:31,749 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:31,749 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:31,751 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:31,751 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:31,758 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:31,758 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.9339ms
+INFO  2026-10-12 13:48:31,758 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:31,758 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 8.4672ms
+INFO  2026-10-12 13:48:34,932 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:34,933 [31   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:34,933 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:34,934 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:34,934 [31   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:34,940 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:34,940 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 5.8163ms
+INFO  2026-10-12 13:48:34,940 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:34,940 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.4740ms
+INFO  2026-10-12 13:48:39,181 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - - -
+INFO  2026-10-12 13:48:39,181 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:39,181 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/save-answer - 204 - - 0.2013ms
+INFO  2026-10-12 13:48:39,182 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - application/json 53
+INFO  2026-10-12 13:48:39,182 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:39,182 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:39,183 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SaveAnswer", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SaveAnswer(KTGKMD.Exams.Dto.SaveAnswerInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:39,183 [27   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:39,189 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:39,190 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc) in 6.1326ms
+INFO  2026-10-12 13:48:39,190 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SaveAnswer (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:39,190 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/save-answer - 200 - application/json;+charset=utf-8 7.6553ms
+INFO  2026-10-12 13:48:42,393 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/exams/submit - - -
+INFO  2026-10-12 13:48:42,394 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:42,394 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/exams/submit - 204 - - 0.2773ms
+INFO  2026-10-12 13:48:42,394 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/api/exams/submit - application/json 691
+INFO  2026-10-12 13:48:42,395 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2026-10-12 13:48:42,395 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Controllers.ExamApiController.SubmitExam (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:42,395 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SubmitExam", controller = "ExamApi", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[KTGKMD.Exams.Dto.SubmitExamResultDto]] SubmitExam(KTGKMD.Exams.Dto.SubmitExamInput) on controller KTGKMD.Web.Controllers.ExamApiController (KTGKMD.Web.Mvc).
+INFO  2026-10-12 13:48:42,395 [25   ] idateAntiforgeryTokenAuthorizationFilter - Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+INFO  2026-10-12 13:48:42,467 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:48:42,467 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Controllers.ExamApiController.SubmitExam (KTGKMD.Web.Mvc) in 72.2341ms
+INFO  2026-10-12 13:48:42,467 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Controllers.ExamApiController.SubmitExam (KTGKMD.Web.Mvc)'
+INFO  2026-10-12 13:48:42,467 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5000/api/exams/submit - 200 - application/json;+charset=utf-8 73.0633ms

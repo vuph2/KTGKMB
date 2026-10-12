@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#007230", "on-surface-variant": "#434655", "tertiary": "#784b00", "on-error": "#ffffff", "outline": "#737686", "inverse-surface": "#283044", "on-primary": "#ffffff", "primary-container": "#2563eb", "secondary-container": "#7cf994", "tertiary-fixed": "#ffddb8", "surface-container-low": "#f2f3ff", "primary-fixed": "#dbe1ff", "surface-dim": "#d2d9f4", "primary": "#004ac6", "on-background": "#131b2e", "primary-fixed-dim": "#b4c5ff", "surface-container": "#eaedff", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "on-secondary": "#ffffff", "on-primary-fixed": "#00174b", "outline-variant": "#c3c6d7", "error": "#ba1a1a", "on-primary-container": "#eeefff", "surface-variant": "#dae2fd", "on-error-container": "#93000a", "error-container": "#ffdad6", "background": "#faf8ff", "on-tertiary-fixed-variant": "#653e00", "inverse-primary": "#b4c5ff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#002109", "secondary": "#006e2d", "on-secondary-fixed-variant": "#005320", "on-primary-fixed-variant": "#003ea8", "secondary-fixed": "#7ffc97", "secondary-fixed-dim": "#62df7d", "tertiary-fixed-dim": "#ffb95f", "surface-tint": "#0053db", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "surface-container-high": "#e2e7ff", "surface-bright": "#faf8ff", "surface-container-highest": "#dae2fd", "tertiary-container": "#996100", "surface": "#faf8ff", "on-tertiary-container": "#ffeedd" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"] }, fontSize: { "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Quay lại" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="TOEIC Reading Master Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WG3hjmeadIxAmE--lgdkYQC2aW3wuqgXmkKwcaBEsd1f0eXqR533m3udPDxkvvGedb_CulUm3JFyLlVAwpwA-YRVU1f7gjH6OUuqHT7ffFta5RK1EA_EiBKDkHGf5UT5I9ygra7YjQ4QQNMY3wLMS192wzbaOL3ZZ8KaM0ooPglZImWNhZONjSVIjaJnRAQ92NDcnqHmKk2osvzjBTMXiFVWlm-W24ggGFkb9uftaQ2M47CNFlah-mnntx"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate max-w-[190px]">Exam Taking Experience</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-safe px-margin"><div class="flex flex-col w-full pb-28 select-none">
+<!-- Exam Persistent Floating Bar -->
+<div class="sticky top-0 z-30 -mx-margin px-margin py-space-sm bg-surface/95 backdrop-blur-md shadow-sm flex items-center justify-between gap-space-sm">
+<!-- Pause / Quit Action -->
+<button aria-label="Tạm dừng làm bài" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+<span class="font-label-sm text-label-sm">Tạm dừng</span>
+</button>
+<!-- Countdown Timer Pill -->
+<div class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary animate-pulse">timer</span>
+<span class="font-headline-sm text-headline-sm tracking-wide font-mono font-bold text-primary" id="exam-timer">62:45</span>
+</div>
+<!-- Submit Action Button -->
+<button class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-error-container text-on-error-container font-label-md text-label-md shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span>Nộp bài</span>
+</button>
+</div>
+<!-- Sub-bar: Category, Question Sequence, Flag -->
+<div class="flex items-center justify-between mt-space-md mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold">
+        Part 7: Đọc hiểu văn bản
+      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+        • Câu 152 / 200
+      </span>
+</div>
+<!-- Flag Bookmark Toggle -->
+<button aria-label="Đánh dấu câu hỏi cần xem lại" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed transition-all active:scale-95 shadow-sm" id="flag-btn" onclick="toggleFlag()" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">flag</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">Đã lưu cờ</span>
+</button>
+</div>
+<!-- Collapsible Reading Passage Container -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm mb-space-md overflow-hidden transition-all duration-300">
+<!-- Interactive Header with Toggle Trigger -->
+<button class="w-full px-4 py-3 bg-surface-container-high flex items-center justify-between text-left active:bg-surface-container-highest transition-colors" onclick="togglePassage()" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+<span class="font-label-lg text-label-lg text-on-surface">Đoạn văn đọc hiểu (Email &amp; Schedule)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm hidden sm:inline">Thu gọn / Mở rộng</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300" id="passage-chevron">expand_less</span>
+</div>
+</button>
+<!-- Reading Content (Clean, Typographically Optimized for Intensive Vietnamese Context) -->
+<div class="p-4 flex flex-col gap-3 max-h-[290px] overflow-y-auto leading-relaxed" id="passage-body">
+<!-- Context Scope Badge -->
+<div class="inline-block px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm italic w-fit">
+        Questions 151-152 refer to the following email.
+      </div>
+<!-- Email Metainfo Block -->
+<div class="p-3 rounded-lg bg-surface-container-low text-on-surface space-y-1 font-body-sm text-body-sm">
+<div><strong class="font-semibold text-on-surface-variant">To:</strong> All Marketing Personnel &lt;marketing@apexcorp.com&gt;</div>
+<div><strong class="font-semibold text-on-surface-variant">From:</strong> David Chen, Operations Director</div>
+<div><strong class="font-semibold text-on-surface-variant">Subject:</strong> Annual Strategy Workshop Schedule Update</div>
+<div><strong class="font-semibold text-on-surface-variant">Date:</strong> October 14</div>
+</div>
+<!-- Email Letter Body with Contextual Yellow Highlights -->
+<div class="font-body-md text-body-md text-on-surface space-y-2.5">
+<p>Dear Marketing Team,</p>
+<p>
+          Please note that our quarterly workshop will be 
+          <mark class="bg-tertiary-fixed text-on-tertiary-fixed px-1 rounded font-medium">rescheduled from Friday morning to Thursday afternoon</mark>
+          (2:00 PM - 5:30 PM) to accommodate overseas partners joining the keynote presentation.
+        </p>
+<p>
+          The session will still take place in Conference Room B. Please ensure all regional quarterly reports are submitted to the shared drive at least 24 hours prior to the updated meeting slot. Attendance is mandatory for department heads and optional for remote interns.
+        </p>
+<p class="pt-1 text-on-surface-variant font-body-sm text-body-sm">
+          Best regards,<br/>
+          David Chen
+        </p>
+</div>
+</div>
+</div>
+<!-- Question Stem Card -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm mb-space-md">
+<div class="flex items-start gap-2.5">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">
+        152
+      </span>
+<p class="font-headline-sm text-headline-sm text-on-surface pt-0.5">
+        What is indicated about the quarterly workshop?
+      </p>
+</div>
+<div class="mt-2 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Chọn 1 đáp án chính xác</span>
+</div>
+</div>
+<!-- 4 Large Tappable Options A-D -->
+<div class="flex flex-col gap-3">
+<!-- Option A (SELECTED STATE) -->
+<button class="option-row w-full min-h-[56px] px-4 py-3 rounded-xl bg-primary-fixed/40 text-on-surface shadow-sm flex items-center justify-between text-left transition-all active:scale-[0.99] relative overflow-hidden" data-option="A" onclick="selectOption(this)" type="button">
+<!-- Active accent side bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-center gap-3.5 pr-2">
+<span class="opt-badge w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg shrink-0 font-bold">
+          A
+        </span>
+<span class="font-body-lg text-body-lg font-medium text-primary">
+          It has been moved to Thursday.
+        </span>
+</div>
+<span class="material-symbols-outlined opt-check text-primary text-[24px]" style="font-variation-settings: 'FILL' 1;">
+        check_circle
+      </span>
+</button>
+<!-- Option B (DEFAULT STATE) -->
+<button class="option-row w-full min-h-[56px] px-4 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface shadow-sm flex items-center justify-between text-left transition-all active:scale-[0.99]" data-option="B" onclick="selectOption(this)" type="button">
+<div class="flex items-center gap-3.5 pr-2">
+<span class="opt-badge w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg shrink-0 font-bold">
+          B
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface">
+          It will be held at a new venue.
+        </span>
+</div>
+<span class="material-symbols-outlined opt-check text-surface-container-high text-[24px]">
+        radio_button_unchecked
+      </span>
+</button>
+<!-- Option C (DEFAULT STATE) -->
+<button class="option-row w-full min-h-[56px] px-4 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface shadow-sm flex items-center justify-between text-left transition-all active:scale-[0.99]" data-option="C" onclick="selectOption(this)" type="button">
+<div class="flex items-center gap-3.5 pr-2">
+<span class="opt-badge w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg shrink-0 font-bold">
+          C
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface">
+          It requires registration in advance.
+        </span>
+</div>
+<span class="material-symbols-outlined opt-check text-surface-container-high text-[24px]">
+        radio_button_unchecked
+      </span>
+</button>
+<!-- Option D (DEFAULT STATE) -->
+<button class="option-row w-full min-h-[56px] px-4 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface shadow-sm flex items-center justify-between text-left transition-all active:scale-[0.99]" data-option="D" onclick="selectOption(this)" type="button">
+<div class="flex items-center gap-3.5 pr-2">
+<span class="opt-badge w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg shrink-0 font-bold">
+          D
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface">
+          It is mandatory for all interns.
+        </span>
+</div>
+<span class="material-symbols-outlined opt-check text-surface-container-high text-[24px]">
+        radio_button_unchecked
+      </span>
+</button>
+</div>
+<!-- Study Companion Delight Micro-Card -->
+<div class="mt-space-lg p-3.5 rounded-xl bg-surface-container flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Mẹo Part 7</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+        Chú ý các từ đồng nghĩa: "rescheduled to Thursday" = "moved to Thursday".
+      </p>
+</div>
+</div>
+<!-- Bottom Sheet Overlay for Question Grid Matrix -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex-col justify-end transition-opacity duration-300" id="matrix-sheet">
+<div class="bg-surface-container-lowest rounded-t-3xl p-5 shadow-2xl max-h-[663px] flex flex-col animate-in slide-in-from-bottom duration-300">
+<!-- Sheet Drag Handle & Title -->
+<div class="w-12 h-1.5 rounded-full bg-surface-container-highest mx-auto mb-3"></div>
+<div class="flex items-center justify-between pb-3">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bảng câu hỏi</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Đã làm 64/100 câu • 4 câu gắn cờ</p>
+</div>
+<button aria-label="Đóng bảng câu hỏi" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="toggleSheet()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Quick Status Indicators -->
+<div class="flex items-center gap-3 py-2 text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-primary"></span> Đã làm</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-surface-container-high"></span> Chưa làm</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-tertiary"></span> Đánh dấu</span>
+</div>
+<!-- Matrix Numbers Grid -->
+<div class="overflow-y-auto py-3 grid grid-cols-5 gap-2.5">
+<!-- Sample Numbers -->
+<button class="h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold" type="button">148</button>
+<button class="h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold" type="button">149</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">150</button>
+<button class="h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold" type="button">151</button>
+<!-- Current 152 Active with Flag Dot -->
+<button class="h-10 rounded-xl bg-primary-fixed text-on-primary-fixed font-label-md text-label-md flex items-center justify-center font-bold relative shadow-inner" type="button">
+          152
+          <span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-tertiary"></span>
+</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">153</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">154</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">155</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">156</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">157</button>
+</div>
+<button class="mt-3 w-full py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg" onclick="toggleSheet()" type="button">
+        Quay lại bài làm
+      </button>
+</div>
+</div>
+<!-- Sticky Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.04)] px-margin py-3 pb-safe flex items-center justify-between gap-2">
+<!-- Prev Question Button -->
+<button class="h-12 px-4 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+<span class="hidden xs:inline">Câu trước</span>
+</button>
+<!-- Center Quick Matrix Trigger -->
+<button class="h-12 px-5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all shadow-sm" onclick="toggleSheet()" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">grid_view</span>
+<span class="font-bold">Câu 152</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_drop_up</span>
+</button>
+<!-- Next Question Button (Brand Highlight) -->
+<button class="h-12 px-5 rounded-xl bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all shadow-md" type="button">
+<span>Câu sau</span>
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<script>
+  // Reading Passage Accordion
+  function togglePassage() {
+    const body = document.getElementById('passage-body');
+    const chevron = document.getElementById('passage-chevron');
+    if (!body || !chevron) return;
+    
+    if (body.classList.contains('hidden')) {
+      body.classList.remove('hidden');
+      chevron.style.transform = 'rotate(0deg)';
+    } else {
+      body.classList.add('hidden');
+      chevron.style.transform = 'rotate(180deg)';
+    }
+  }
+
+  // Answer Option Selection
+  function selectOption(targetRow) {
+    const rows = document.querySelectorAll('.option-row');
+    rows.forEach(row => {
+      // Clear selected state
+      row.classList.remove('bg-primary-fixed/40');
+      row.classList.add('bg-surface-container-lowest');
+      
+      const bar = row.querySelector('.bg-primary.absolute');
+      if (bar) bar.remove();
+      
+      const badge = row.querySelector('.opt-badge');
+      if (badge) {
+        badge.className = 'opt-badge w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg shrink-0 font-bold';
+      }
+      
+      const text = row.querySelector('.font-body-lg');
+      if (text) {
+        text.className = 'font-body-lg text-body-lg text-on-surface';
+      }
+      
+      const check = row.querySelector('.opt-check');
+      if (check) {
+        check.textContent = 'radio_button_unchecked';
+        check.className = 'material-symbols-outlined opt-check text-surface-container-high text-[24px]';
+        check.style.fontVariationSettings = "'FILL' 0";
+      }
+    });
+
+    // Set selected on target
+    targetRow.classList.remove('bg-surface-container-lowest');
+    targetRow.classList.add('bg-primary-fixed/40');
+    
+    const indicator = document.createElement('div');
+    indicator.className = 'absolute left-0 top-0 bottom-0 w-1.5 bg-primary';
+    targetRow.prepend(indicator);
+
+    const activeBadge = targetRow.querySelector('.opt-badge');
+    if (activeBadge) {
+      activeBadge.className = 'opt-badge w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg shrink-0 font-bold';
+    }
+
+    const activeText = targetRow.querySelector('.font-body-lg');
+    if (activeText) {
+      activeText.className = 'font-body-lg text-body-lg font-medium text-primary';
+    }
+
+    const activeCheck = targetRow.querySelector('.opt-check');
+    if (activeCheck) {
+      activeCheck.textContent = 'check_circle';
+      activeCheck.className = 'material-symbols-outlined opt-check text-primary text-[24px]';
+      activeCheck.style.fontVariationSettings = "'FILL' 1";
+    }
+  }
+
+  // Flag Toggle
+  function toggleFlag() {
+    const btn = document.getElementById('flag-btn');
+    if (!btn) return;
+    const isFlagged = btn.classList.contains('bg-tertiary-fixed');
+    if (isFlagged) {
+      btn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface-variant transition-all active:scale-95 shadow-sm';
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">outlined_flag</span><span class="font-label-sm text-label-sm font-semibold">Đánh dấu</span>`;
+    } else {
+      btn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed transition-all active:scale-95 shadow-sm';
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">flag</span><span class="font-label-sm text-label-sm font-semibold text-tertiary">Đã lưu cờ</span>`;
+    }
+  }
+
+  // Question Matrix Drawer
+  function toggleSheet() {
+    const sheet = document.getElementById('matrix-sheet');
+    if (!sheet) return;
+    if (sheet.classList.contains('hidden')) {
+      sheet.classList.remove('hidden');
+      sheet.classList.add('flex');
+    } else {
+      sheet.classList.add('hidden');
+      sheet.classList.remove('flex');
+    }
+  }
+</script></main></body></html>

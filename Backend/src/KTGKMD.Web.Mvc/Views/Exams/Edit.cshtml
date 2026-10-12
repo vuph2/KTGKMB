@@ -1,0 +1,532 @@
+@using KTGKMD.Exams.Dto
+@model ExamDetailDto
+@{
+    Layout = null;
+    var orderedQuestions = Model.Questions.OrderBy(q => q.QuestionNumber).ToList();
+    var firstQ = orderedQuestions.FirstOrDefault();
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Chỉnh sửa Đề thi - @Model.Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#004ac6",
+                        "primary-container": "#2563eb",
+                        "on-primary": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "on-surface": "#0b1c30",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container": "#e5eeff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "outline": "#737686",
+                        "outline-variant": "#c3c6d7",
+                        "secondary": "#006e2d",
+                        "secondary-container": "#7cf994",
+                        "tertiary": "#ae0010",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-surface-container-high selection:text-primary">
+    <!-- TOP NAVIGATION HEADER -->
+    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-[0_1px_8px_rgba(15,23,42,0.06)] border-b border-outline-variant/30">
+        <div class="h-16 w-full max-w-[1440px] mx-auto px-6 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <a href="/Exams" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-black shadow-sm">
+                        <span class="material-symbols-outlined text-[24px]">menu_book</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-base text-on-surface tracking-tight leading-none">TOEIC Reading</span>
+                        <span class="text-xs text-on-surface-variant leading-tight">Hệ thống Quản lý Đề thi</span>
+                    </div>
+                </a>
+                <div class="h-6 w-px bg-outline-variant/40 hidden md:block"></div>
+                <nav class="hidden lg:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl">
+                    <a class="px-4 py-1.5 text-xs font-semibold text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" href="/Exams">Danh sách đề</a>
+                    <a class="px-4 py-1.5 text-xs font-semibold text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" href="/Exams/Upload">Nhập từ Word</a>
+                    <a class="px-4 py-1.5 text-xs font-semibold rounded-lg bg-primary text-white shadow-sm transition-all" href="/Exams/Edit/@Model.Id">Sửa đề</a>
+                    <a class="px-4 py-1.5 text-xs font-semibold text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" href="/Exams/Preview/@Model.Id">Xem trước</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-3">
+                <a class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-white text-xs font-bold px-4 py-2 rounded-xl shadow-sm transition-all" href="/Exams/Upload">
+                    <span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+                    <span>+ Nhập đề từ Word</span>
+                </a>
+                <div class="flex items-center gap-2 pl-3 border-l border-outline-variant/40">
+                    <div class="hidden sm:flex flex-col items-end text-right">
+                        <span class="text-xs font-bold text-on-surface leading-tight">Giảng viên phụ trách</span>
+                        <span class="text-[10px] px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">Lecturer</span>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
+                        <span class="material-symbols-outlined text-[18px]">person</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full pt-16 min-h-screen bg-surface flex flex-col">
+        <!-- TOP COMMAND STRIP FROM STITCH -->
+        <div class="w-full bg-white border-b border-outline-variant/30 shadow-sm px-6 py-3 flex flex-col gap-2">
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-1.5 text-xs text-on-surface-variant">
+                <a class="hover:text-primary transition-colors" href="/Exams">Danh sách đề</a>
+                <span class="material-symbols-outlined text-[13px] opacity-60">chevron_right</span>
+                <span class="font-medium text-on-surface-variant truncate">@Model.Title</span>
+                <span class="material-symbols-outlined text-[13px] opacity-60">chevron_right</span>
+                <span class="text-primary font-bold">Chỉnh sửa đề</span>
+            </div>
+
+            <!-- Exam Toolbar -->
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-1">
+                <div class="flex items-center gap-4 min-w-0">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold">
+                            <span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+                        </div>
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h1 class="text-base font-extrabold text-on-surface tracking-tight truncate">@Model.Title</h1>
+                                <span class="px-2.5 py-0.5 rounded-full bg-secondary-container/50 text-secondary text-xs font-bold">@Model.Questions.Count câu hỏi</span>
+                            </div>
+                            <p class="text-xs text-on-surface-variant">Thời gian làm bài: @Model.DurationMinutes phút • CSDL: LocalDB MSSQL</p>
+                        </div>
+                    </div>
+
+                    <!-- Part Filter Tabs -->
+                    <div class="hidden md:flex items-center bg-surface-container-low p-1 rounded-xl ml-2 border border-outline-variant/30">
+                        <button onclick="filterPartNav('all')" id="tab-nav-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-primary shadow-sm">Tất cả (@Model.Questions.Count)</button>
+                        <button onclick="filterPartNav('5')" id="tab-nav-5" class="px-3 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface">Part 5 (@Model.Questions.Count(q => q.PartNumber == 5))</button>
+                        <button onclick="filterPartNav('6')" id="tab-nav-6" class="px-3 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface">Part 6 (@Model.Questions.Count(q => q.PartNumber == 6))</button>
+                        <button onclick="filterPartNav('7')" id="tab-nav-7" class="px-3 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface">Part 7 (@Model.Questions.Count(q => q.PartNumber == 7))</button>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-2">
+                    <a href="/Exams/Preview/@Model.Id" class="inline-flex items-center gap-1.5 bg-surface-container hover:bg-surface-container-high text-primary font-bold text-xs px-4 py-2.5 rounded-xl transition-all">
+                        <span class="material-symbols-outlined text-[18px]">visibility</span>
+                        <span>Xem trước</span>
+                    </a>
+                    <button onclick="saveCurrentQuestion()" class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm transition-all" type="button">
+                        <span class="material-symbols-outlined text-[18px]">save</span>
+                        <span>Lưu thay đổi</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2-COLUMN MAIN WORKSPACE -->
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-12 gap-6 p-6 items-start flex-1">
+            
+            <!-- LEFT COLUMN: QUESTION NAVIGATOR -->
+            <aside class="col-span-12 lg:col-span-4 xl:col-span-3 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-4 flex flex-col gap-3 h-[calc(100vh-170px)] sticky top-36">
+                <!-- Header & Search -->
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-extrabold text-on-surface">Danh sách câu hỏi</span>
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold" id="questionCountBadge">@orderedQuestions.Count câu</span>
+                </div>
+
+                <div class="relative w-full">
+                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+                    <input class="w-full h-9 pl-9 pr-3 rounded-xl bg-surface-container-low text-xs placeholder:text-outline text-on-surface border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Tìm kiếm câu hỏi..." type="text" id="searchInput" oninput="searchQuestions(this.value)"/>
+                </div>
+
+                <!-- Quick Metrics Strip -->
+                <div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2 rounded-xl text-xs">
+                    <div class="flex flex-col">
+                        <span class="text-[10px] text-on-surface-variant font-medium">Hợp lệ</span>
+                        <span class="font-extrabold text-secondary font-mono">@orderedQuestions.Count(q => !string.IsNullOrEmpty(q.Explanation)) <span class="text-[10px] text-outline font-normal">/ @orderedQuestions.Count</span></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[10px] text-on-surface-variant font-medium">Chưa có giải thích</span>
+                        <span class="font-extrabold text-tertiary font-mono">@orderedQuestions.Count(q => string.IsNullOrEmpty(q.Explanation)) câu</span>
+                    </div>
+                </div>
+
+                <!-- Scrollable List of Question Cards -->
+                <div class="flex-1 overflow-y-auto space-y-2 pr-1" id="questionListContainer">
+                    @foreach (var q in orderedQuestions)
+                    {
+                        var hasExp = !string.IsNullOrEmpty(q.Explanation);
+                        <div class="question-nav-item p-3 rounded-xl border border-outline-variant/20 hover:border-primary/40 cursor-pointer transition-all flex flex-col gap-1 @(q == firstQ ? "bg-surface-container-high border-primary/50 shadow-sm" : "bg-surface-container-low/50")"
+                             id="nav-item-@q.Id"
+                             data-qid="@q.Id"
+                             data-part="@q.PartNumber"
+                             data-qnum="@q.QuestionNumber"
+                             onclick="selectQuestion(@q.Id)">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="text-xs font-bold text-on-surface">Câu @q.QuestionNumber</span>
+                                    <span class="px-1.5 py-0.2 rounded bg-surface-container text-primary text-[10px] font-bold">Part @q.PartNumber</span>
+                                </div>
+                                <span class="inline-flex items-center gap-1 text-[10px] font-semibold @(hasExp ? "text-secondary" : "text-tertiary")">
+                                    <span class="w-1.5 h-1.5 rounded-full @(hasExp ? "bg-secondary" : "bg-tertiary")"></span>
+                                    @(hasExp ? "Hợp lệ" : "Thiếu giải thích")
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-on-surface-variant line-clamp-1">@(string.IsNullOrEmpty(q.Content) ? "(Đoạn văn điền từ Part 6)" : q.Content)</p>
+                        </div>
+                    }
+                </div>
+            </aside>
+
+            <!-- RIGHT PANEL: QUESTION & PASSAGE EDITOR CANVAS -->
+            <main class="col-span-12 lg:col-span-8 xl:col-span-9 flex flex-col gap-6">
+                
+                <!-- Toast Notification -->
+                <div id="saveToast" class="hidden p-4 rounded-xl bg-emerald-500 text-white font-bold text-xs flex items-center justify-between shadow-md transition-all">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                        <span id="toastMessage">Đã lưu thay đổi câu hỏi thành công!</span>
+                    </div>
+                    <button onclick="document.getElementById('saveToast').classList.add('hidden')" class="text-white hover:opacity-80">
+                        <span class="material-symbols-outlined text-[16px]">close</span>
+                    </button>
+                </div>
+
+                <!-- Editor Header Banner -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-outline-variant/30 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-col gap-1">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2.5 py-0.5 rounded-full bg-primary text-white text-xs font-bold" id="editorPartBadge">PART 5</span>
+                            <span class="text-xs text-on-surface-variant font-medium" id="editorPartSubtitle">Incomplete Sentences</span>
+                        </div>
+                        <h2 class="text-lg font-black text-on-surface tracking-tight" id="editorTitle">Chỉnh sửa Câu 101</h2>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button onclick="saveCurrentQuestion()" class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm transition-all">
+                            <span class="material-symbols-outlined text-[18px]">save</span>
+                            <span>Lưu thay đổi câu này</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Reading Passage Card (Chỉ hiện khi Part 6 & 7) -->
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-outline-variant/30 flex flex-col gap-3" id="passageCard" style="display: none;">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[22px]">article</span>
+                            <span class="text-sm font-bold text-on-surface">Đoạn văn đọc hiểu (Reading Passage)</span>
+                        </div>
+                        <span class="text-[11px] px-2 py-0.5 rounded bg-surface-container text-primary font-semibold" id="passageInfo">Đoạn văn bài đọc</span>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-surface-container-low/40 border border-outline-variant/20 text-xs font-serif leading-relaxed text-on-surface max-h-60 overflow-y-auto whitespace-pre-line" id="passageContentDisplay">
+                    </div>
+                </section>
+
+                <!-- Question Content & Options Card -->
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-outline-variant/30 flex flex-col gap-5">
+                    <!-- Nội dung câu hỏi -->
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-xs font-bold text-on-surface flex items-center justify-between">
+                            <span>Nội dung câu hỏi (Question Content)</span>
+                            <span class="text-[10px] text-outline" id="editorQuestionId">ID: --</span>
+                        </label>
+                        <textarea class="w-full p-3.5 rounded-xl bg-surface-container-low text-xs text-on-surface border border-outline-variant/30 focus:outline-none focus:bg-white focus:ring-2 focus:ring-primary/20 leading-relaxed font-medium" rows="3" id="inputQuestionContent"></textarea>
+                    </div>
+
+                    <!-- 4 Phương án lựa chọn A, B, C, D -->
+                    <div class="flex flex-col gap-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-on-surface">Các phương án đáp án & Chọn đáp án đúng</span>
+                            <span class="text-[11px] text-on-surface-variant font-medium">Bấm chọn nút tròn để chỉ định đáp án đúng [KEY:]</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-3" id="optionsContainer">
+                            <!-- Option A -->
+                            <div class="p-3.5 rounded-xl border border-outline-variant/20 bg-surface-container-low/30 flex items-center gap-3 transition-all option-row" id="row-opt-A">
+                                <label class="flex items-center gap-2 cursor-pointer shrink-0">
+                                    <input type="radio" name="correctRadio" value="A" class="w-5 h-5 text-primary accent-primary cursor-pointer" onchange="onRadioChanged('A')" />
+                                    <span class="w-7 h-7 rounded-lg bg-surface-container text-primary flex items-center justify-center font-bold text-xs opt-label-badge">A</span>
+                                </label>
+                                <input type="text" class="flex-1 h-9 px-3 rounded-lg bg-white border border-outline-variant/30 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" id="input-opt-A" placeholder="Nội dung đáp án A..." />
+                                <span class="hidden text-emerald-600 material-symbols-outlined text-[20px] opt-check-icon">check_circle</span>
+                            </div>
+
+                            <!-- Option B -->
+                            <div class="p-3.5 rounded-xl border border-outline-variant/20 bg-surface-container-low/30 flex items-center gap-3 transition-all option-row" id="row-opt-B">
+                                <label class="flex items-center gap-2 cursor-pointer shrink-0">
+                                    <input type="radio" name="correctRadio" value="B" class="w-5 h-5 text-primary accent-primary cursor-pointer" onchange="onRadioChanged('B')" />
+                                    <span class="w-7 h-7 rounded-lg bg-surface-container text-primary flex items-center justify-center font-bold text-xs opt-label-badge">B</span>
+                                </label>
+                                <input type="text" class="flex-1 h-9 px-3 rounded-lg bg-white border border-outline-variant/30 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" id="input-opt-B" placeholder="Nội dung đáp án B..." />
+                                <span class="hidden text-emerald-600 material-symbols-outlined text-[20px] opt-check-icon">check_circle</span>
+                            </div>
+
+                            <!-- Option C -->
+                            <div class="p-3.5 rounded-xl border border-outline-variant/20 bg-surface-container-low/30 flex items-center gap-3 transition-all option-row" id="row-opt-C">
+                                <label class="flex items-center gap-2 cursor-pointer shrink-0">
+                                    <input type="radio" name="correctRadio" value="C" class="w-5 h-5 text-primary accent-primary cursor-pointer" onchange="onRadioChanged('C')" />
+                                    <span class="w-7 h-7 rounded-lg bg-surface-container text-primary flex items-center justify-center font-bold text-xs opt-label-badge">C</span>
+                                </label>
+                                <input type="text" class="flex-1 h-9 px-3 rounded-lg bg-white border border-outline-variant/30 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" id="input-opt-C" placeholder="Nội dung đáp án C..." />
+                                <span class="hidden text-emerald-600 material-symbols-outlined text-[20px] opt-check-icon">check_circle</span>
+                            </div>
+
+                            <!-- Option D -->
+                            <div class="p-3.5 rounded-xl border border-outline-variant/20 bg-surface-container-low/30 flex items-center gap-3 transition-all option-row" id="row-opt-D">
+                                <label class="flex items-center gap-2 cursor-pointer shrink-0">
+                                    <input type="radio" name="correctRadio" value="D" class="w-5 h-5 text-primary accent-primary cursor-pointer" onchange="onRadioChanged('D')" />
+                                    <span class="w-7 h-7 rounded-lg bg-surface-container text-primary flex items-center justify-center font-bold text-xs opt-label-badge">D</span>
+                                </label>
+                                <input type="text" class="flex-1 h-9 px-3 rounded-lg bg-white border border-outline-variant/30 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" id="input-opt-D" placeholder="Nội dung đáp án D..." />
+                                <span class="hidden text-emerald-600 material-symbols-outlined text-[20px] opt-check-icon">check_circle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lời giải thích [EXPLANATION:] -->
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-xs font-bold text-on-surface flex items-center justify-between">
+                            <span class="flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-primary text-[18px]">lightbulb</span>
+                                <span>Lời giải thích chi tiết & Phân tích đáp án</span>
+                            </span>
+                            <span class="text-[10px] text-on-surface-variant font-medium">Học viên sẽ thấy giải thích sau khi nộp bài</span>
+                        </label>
+                        <textarea class="w-full p-3.5 rounded-xl bg-surface-container-low text-xs text-on-surface border border-outline-variant/30 focus:outline-none focus:bg-white focus:ring-2 focus:ring-primary/20 leading-relaxed" rows="3" id="inputExplanation" placeholder="Nhập giải thích ngữ pháp, từ vựng hoặc trích dẫn từ bài đọc..."></textarea>
+                    </div>
+
+                    <!-- Bottom Action Toolbar -->
+                    <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+                        <span class="text-xs text-on-surface-variant" id="saveStatusHint">Sẵn sàng lưu thay đổi.</span>
+                        <button onclick="saveCurrentQuestion()" class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-white font-bold text-xs px-6 py-3 rounded-xl shadow-sm transition-all" type="button">
+                            <span class="material-symbols-outlined text-[18px]">save</span>
+                            <span>Lưu thay đổi câu này</span>
+                        </button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </main>
+
+    <!-- CLIENT DATA STORE -->
+    <script>
+        const allQuestionsData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Questions));
+        const allPassagesData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Passages));
+        let currentSelectedQId = @(firstQ?.Id ?? 0);
+
+        function selectQuestion(qId) {
+            currentSelectedQId = qId;
+            const q = allQuestionsData.find(x => x.id === qId || x.Id === qId);
+            if (!q) return;
+
+            // Highlight nav item
+            document.querySelectorAll('.question-nav-item').forEach(el => {
+                el.classList.remove('bg-surface-container-high', 'border-primary/50', 'shadow-sm');
+                el.classList.add('bg-surface-container-low/50');
+            });
+            const activeNav = document.getElementById(`nav-item-${qId}`);
+            if (activeNav) {
+                activeNav.classList.remove('bg-surface-container-low/50');
+                activeNav.classList.add('bg-surface-container-high', 'border-primary/50', 'shadow-sm');
+            }
+
+            // Update Right Form
+            const qNum = q.questionNumber ?? q.QuestionNumber;
+            const pNum = q.partNumber ?? q.PartNumber;
+            const content = q.content ?? q.Content ?? '';
+            const explanation = q.explanation ?? q.Explanation ?? '';
+            const options = q.options ?? q.Options ?? [];
+            const passageId = q.passageId ?? q.PassageId;
+
+            document.getElementById('editorPartBadge').innerText = `PART ${pNum}`;
+            document.getElementById('editorTitle').innerText = `Chỉnh sửa Câu ${qNum}`;
+            document.getElementById('editorQuestionId').innerText = `ID: Q-${qId}`;
+            document.getElementById('inputQuestionContent').value = content;
+            document.getElementById('inputExplanation').value = explanation;
+
+            // Subtitle
+            if (pNum === 5) document.getElementById('editorPartSubtitle').innerText = "Incomplete Sentences (Câu độc lập)";
+            else if (pNum === 6) document.getElementById('editorPartSubtitle').innerText = "Text Completion (Điền đoạn văn)";
+            else document.getElementById('editorPartSubtitle').innerText = "Reading Comprehension (Đọc hiểu)";
+
+            // Passage Card
+            const passageCard = document.getElementById('passageCard');
+            if (passageId) {
+                const passage = allPassagesData.find(p => (p.id === passageId || p.Id === passageId));
+                if (passage) {
+                    passageCard.style.display = 'flex';
+                    document.getElementById('passageInfo').innerText = passage.title || `Đoạn văn Part ${pNum}`;
+                    document.getElementById('passageContentDisplay').innerText = passage.content || '(Chưa có nội dung bài đọc)';
+                } else {
+                    passageCard.style.display = 'none';
+                }
+            } else {
+                passageCard.style.display = 'none';
+            }
+
+            // Options
+            ['A', 'B', 'C', 'D'].forEach(label => {
+                const opt = options.find(o => (o.optionLabel === label || o.OptionLabel === label));
+                const inputEl = document.getElementById(`input-opt-${label}`);
+                const rowEl = document.getElementById(`row-opt-${label}`);
+                const radioEl = rowEl.querySelector('input[type="radio"]');
+                const checkIcon = rowEl.querySelector('.opt-check-icon');
+
+                if (opt) {
+                    inputEl.value = opt.content ?? opt.Content ?? '';
+                    inputEl.setAttribute('data-optid', opt.id ?? opt.Id);
+                    const isCor = opt.isCorrect ?? opt.IsCorrect ?? false;
+                    radioEl.checked = isCor;
+                    if (isCor) {
+                        rowEl.classList.add('bg-emerald-50', 'border-emerald-300');
+                        checkIcon.classList.remove('hidden');
+                    } else {
+                        rowEl.classList.remove('bg-emerald-50', 'border-emerald-300');
+                        checkIcon.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        function onRadioChanged(selectedLabel) {
+            ['A', 'B', 'C', 'D'].forEach(label => {
+                const rowEl = document.getElementById(`row-opt-${label}`);
+                const checkIcon = rowEl.querySelector('.opt-check-icon');
+                if (label === selectedLabel) {
+                    rowEl.classList.add('bg-emerald-50', 'border-emerald-300');
+                    checkIcon.classList.remove('hidden');
+                } else {
+                    rowEl.classList.remove('bg-emerald-50', 'border-emerald-300');
+                    checkIcon.classList.add('hidden');
+                }
+            });
+        }
+
+        async function saveCurrentQuestion() {
+            if (!currentSelectedQId) return;
+
+            const content = document.getElementById('inputQuestionContent').value;
+            const explanation = document.getElementById('inputExplanation').value;
+
+            const selectedRadio = document.querySelector('input[name="correctRadio"]:checked');
+            const selectedKey = selectedRadio ? selectedRadio.value : 'A';
+
+            const optionsPayload = [];
+            ['A', 'B', 'C', 'D'].forEach(label => {
+                const inputEl = document.getElementById(`input-opt-${label}`);
+                const optId = parseInt(inputEl.getAttribute('data-optid') || '0');
+                optionsPayload.push({
+                    optionId: optId,
+                    content: inputEl.value,
+                    isCorrect: (label === selectedKey)
+                });
+            });
+
+            try {
+                const res = await fetch('/Exams/UpdateQuestion', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        questionId: currentSelectedQId,
+                        content: content,
+                        explanation: explanation,
+                        options: optionsPayload
+                    })
+                });
+
+                const data = await res.json();
+                if (data.success) {
+                    showToast("Đã lưu câu hỏi thành công vào CSDL!");
+                    
+                    // Cập nhật local store
+                    const localQ = allQuestionsData.find(x => (x.id === currentSelectedQId || x.Id === currentSelectedQId));
+                    if (localQ) {
+                        localQ.content = content;
+                        localQ.explanation = explanation;
+                    }
+                } else {
+                    alert("Lỗi khi lưu: " + (data.message || "Không xác định"));
+                }
+            } catch (err) {
+                alert("Lỗi kết nối máy chủ: " + err.message);
+            }
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('saveToast');
+            document.getElementById('toastMessage').innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+
+        function filterPartNav(part) {
+            ['all', '5', '6', '7'].forEach(p => {
+                const btn = document.getElementById(`tab-nav-${p}`);
+                if (btn) {
+                    if (p === part) {
+                        btn.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-primary shadow-sm";
+                    } else {
+                        btn.className = "px-3 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface";
+                    }
+                }
+            });
+
+            const items = document.querySelectorAll('.question-nav-item');
+            let visibleCount = 0;
+            items.forEach(el => {
+                const p = el.getAttribute('data-part');
+                if (part === 'all' || p === part) {
+                    el.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            document.getElementById('questionCountBadge').innerText = `${visibleCount} câu`;
+        }
+
+        function searchQuestions(term) {
+            const clean = term.toLowerCase().trim();
+            const items = document.querySelectorAll('.question-nav-item');
+            let visibleCount = 0;
+            items.forEach(el => {
+                const text = el.innerText.toLowerCase();
+                if (!clean || text.includes(clean)) {
+                    el.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            document.getElementById('questionCountBadge').innerText = `${visibleCount} câu`;
+        }
+
+        // Khởi tạo câu hỏi đầu tiên
+        document.addEventListener('DOMContentLoaded', () => {
+            if (currentSelectedQId) {
+                selectQuestion(currentSelectedQId);
+            }
+        });
+    </script>
+</body>
+</html>

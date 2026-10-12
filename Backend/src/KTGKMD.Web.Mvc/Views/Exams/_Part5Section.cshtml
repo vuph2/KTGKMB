@@ -1,0 +1,53 @@
+@using KTGKMD.Exams.Dto
+@model List<QuestionDto>
+
+<div class="card card-outline card-primary shadow-sm mb-4">
+    <div class="card-header bg-light">
+        <h4 class="card-title font-weight-bold text-primary mb-0">
+            <i class="fas fa-check-square mr-1"></i> PART 5: Incomplete Sentences (Câu hỏi độc lập)
+        </h4>
+        <div class="card-tools">
+            <span class="badge badge-primary">@Model.Count câu</span>
+        </div>
+    </div>
+    <div class="card-body">
+        @if (Model == null || Model.Count == 0)
+        {
+            <div class="text-muted text-center py-3">Không có câu hỏi Part 5 nào trong đề này.</div>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var q in Model)
+                {
+                    <div class="col-md-6 mb-3">
+                        <div class="border rounded p-3 h-100 bg-white shadow-sm">
+                            <div class="font-weight-bold mb-2 text-dark">
+                                <span class="badge badge-dark mr-1">Câu @q.QuestionNumber</span> @q.Content
+                            </div>
+                            <div class="options-list pl-2">
+                                @foreach (var opt in q.Options)
+                                {
+                                    <div class="py-1 @(opt.IsCorrect ? "text-success font-weight-bold" : "text-secondary")">
+                                        <span class="badge @(opt.IsCorrect ? "badge-success" : "badge-light border") mr-1">(@opt.OptionLabel)</span>
+                                        @opt.Content
+                                        @if (opt.IsCorrect)
+                                        {
+                                            <i class="fas fa-check-circle text-success ml-1" title="Đáp án đúng"></i>
+                                        }
+                                    </div>
+                                }
+                            </div>
+                            @if (!string.IsNullOrEmpty(q.Explanation))
+                            {
+                                <div class="mt-2 text-muted small bg-light p-2 rounded">
+                                    <i class="fas fa-lightbulb text-warning mr-1"></i><strong>Giải thích:</strong> @q.Explanation
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

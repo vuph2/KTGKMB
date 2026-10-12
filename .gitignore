@@ -1,0 +1,39 @@
+﻿# ===== .NET / ASP.NET =====
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.log
+appsettings.Development.json
+
+# ===== Flutter =====
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.packages
+pubspec.lock
+
+# ===== Android =====
+*.apk
+*.aab
+local.properties
+.gradle/
+
+# ===== iOS =====
+ios/Pods/
+ios/.symlinks/
+
+# ===== General =====
+.idea/
+*.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# ===== Node =====
+node_modules/
+yarn.lock
+package-lock.json

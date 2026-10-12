@@ -1,0 +1,133 @@
+DEBUG 2026-10-12 13:30:21,784 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-10-12 13:30:21,794 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-10-12 13:30:21,800 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.Web.Host.Startup.KTGKMDWebHostModule, KTGKMD.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,801 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDWebCoreModule, KTGKMD.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,801 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDApplicationModule, KTGKMD.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,801 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDCoreModule, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,801 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,801 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,802 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,802 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,802 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.EntityFrameworkCore.KTGKMDEntityFrameworkModule, KTGKMD.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,802 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,802 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,802 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,803 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,803 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,803 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:21,803 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-10-12 13:30:21,836 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:30:21,836 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:30:21,836 [2    ] o.Configuration.LanguageManagementConfig - Converted KTGKMD (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:30:21,836 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:30:21,986 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: KTGKMD.EntityFrameworkCore.KTGKMDDbContext, KTGKMD.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:30:22,064 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-10-12 13:30:22,091 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-10-12 13:30:22,095 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-10-12 13:30:22,098 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: KTGKMD
+DEBUG 2026-10-12 13:30:22,099 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-10-12 13:30:22,103 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-10-12 13:30:22,105 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[KTGKMD.MultiTenancy.Tenant, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[KTGKMD.Authorization.Users.User, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-10-12 13:30:22,113 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2026-10-12 13:30:22,113 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Users.Dto.CreateUserDto
+DEBUG 2026-10-12 13:30:22,115 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Users.Dto.UserDto
+DEBUG 2026-10-12 13:30:22,115 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-10-12 13:30:22,116 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-10-12 13:30:22,116 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Roles.Dto.PermissionDto
+DEBUG 2026-10-12 13:30:22,116 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-10-12 13:30:22,116 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.MultiTenancy.Dto.TenantDto
+INFO  2026-10-12 13:30:23,198 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+WARN  2026-10-12 13:30:23,315 [2    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding address(es) 'https://localhost:44311/'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+INFO  2026-10-12 13:30:23,330 [2    ] Microsoft.Hosting.Lifetime               - Now listening on: https://localhost:44311
+INFO  2026-10-12 13:30:23,331 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-10-12 13:30:23,331 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-10-12 13:30:23,331 [2    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Users\len\OneDrive\Documents\KTGK\Backend\src\KTGKMD.Web.Host
+DEBUG 2026-10-12 13:31:24,650 [20   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2026-10-12 13:31:24,650 [20   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-10-12 13:31:24,650 [20   ] , Culture=neutral, PublicKeyToken=null]] - Stop background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[KTGKMD.MultiTenancy.Tenant, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[KTGKMD.Authorization.Users.User, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-10-12 13:31:24,650 [20   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-10-12 13:31:24,651 [20   ] , Culture=neutral, PublicKeyToken=null]] - WaitToStop background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[KTGKMD.MultiTenancy.Tenant, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[KTGKMD.Authorization.Users.User, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-10-12 13:31:24,651 [20   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+INFO  2026-10-12 13:31:24,651 [20   ] Microsoft.Hosting.Lifetime               - Application is shutting down...
+DEBUG 2026-10-12 13:32:26,373 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-10-12 13:32:26,381 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-10-12 13:32:26,389 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.Web.Host.Startup.KTGKMDWebHostModule, KTGKMD.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,391 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDWebCoreModule, KTGKMD.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,391 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDApplicationModule, KTGKMD.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,391 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.KTGKMDCoreModule, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,391 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,392 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,392 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,392 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,392 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: KTGKMD.EntityFrameworkCore.KTGKMDEntityFrameworkModule, KTGKMD.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,393 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,393 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,393 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,393 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,393 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,393 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,394 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-10-12 13:32:26,418 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:32:26,418 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:32:26,418 [2    ] o.Configuration.LanguageManagementConfig - Converted KTGKMD (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:32:26,418 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-10-12 13:32:26,554 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: KTGKMD.EntityFrameworkCore.KTGKMDDbContext, KTGKMD.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-10-12 13:32:26,632 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-10-12 13:32:26,658 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-10-12 13:32:26,662 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-10-12 13:32:26,664 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: KTGKMD
+DEBUG 2026-10-12 13:32:26,666 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-10-12 13:32:26,670 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-10-12 13:32:26,671 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[KTGKMD.MultiTenancy.Tenant, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[KTGKMD.Authorization.Users.User, KTGKMD.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-10-12 13:32:26,679 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2026-10-12 13:32:26,679 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Users.Dto.CreateUserDto
+DEBUG 2026-10-12 13:32:26,681 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Users.Dto.UserDto
+DEBUG 2026-10-12 13:32:26,681 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-10-12 13:32:26,681 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-10-12 13:32:26,681 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.Roles.Dto.PermissionDto
+DEBUG 2026-10-12 13:32:26,681 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-10-12 13:32:26,681 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - KTGKMD.MultiTenancy.Dto.TenantDto
+INFO  2026-10-12 13:32:27,823 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+WARN  2026-10-12 13:32:27,941 [2    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding address(es) 'https://localhost:44311/'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+INFO  2026-10-12 13:32:27,958 [2    ] Microsoft.Hosting.Lifetime               - Now listening on: https://localhost:44311
+INFO  2026-10-12 13:32:27,959 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-10-12 13:32:27,959 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-10-12 13:32:27,959 [2    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Users\len\OneDrive\Documents\KTGK\Backend\src\KTGKMD.Web.Host
+INFO  2026-10-12 13:32:40,344 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/ - - -
+INFO  2026-10-12 13:32:40,383 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Host.Controllers.HomeController.Index (KTGKMD.Web.Host)'
+INFO  2026-10-12 13:32:40,410 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller KTGKMD.Web.Host.Controllers.HomeController (KTGKMD.Web.Host).
+INFO  2026-10-12 13:32:40,537 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2026-10-12 13:32:40,544 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Host.Controllers.HomeController.Index (KTGKMD.Web.Host) in 127.6887ms
+INFO  2026-10-12 13:32:40,544 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Host.Controllers.HomeController.Index (KTGKMD.Web.Host)'
+INFO  2026-10-12 13:32:40,548 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/ - 302 0 - 204.4679ms
+INFO  2026-10-12 13:32:40,553 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger - - -
+INFO  2026-10-12 13:32:40,572 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger - 301 0 - 18.7441ms
+INFO  2026-10-12 13:32:40,578 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-10-12 13:32:40,609 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 30.9647ms
+INFO  2026-10-12 13:32:40,924 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui.css - - -
+INFO  2026-10-12 13:32:40,933 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui-bundle.js - - -
+INFO  2026-10-12 13:32:40,935 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2026-10-12 13:32:40,936 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui.css - 200 154949 text/css 11.2421ms
+INFO  2026-10-12 13:32:40,944 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui-standalone-preset.js - - -
+INFO  2026-10-12 13:32:40,948 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2026-10-12 13:32:40,948 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 4.4838ms
+INFO  2026-10-12 13:32:40,949 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2026-10-12 13:32:40,950 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui-bundle.js - 200 1484234 text/javascript 16.1655ms
+INFO  2026-10-12 13:32:40,951 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - - -
+INFO  2026-10-12 13:32:40,954 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'C:\Users\len\OneDrive\Documents\KTGK\Backend\src\KTGKMD.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2026-10-12 13:32:40,954 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - 200 3697 text/javascript 2.8058ms
+INFO  2026-10-12 13:32:40,956 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - - -
+INFO  2026-10-12 13:32:40,959 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'C:\Users\len\OneDrive\Documents\KTGK\Backend\src\KTGKMD.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2026-10-12 13:32:40,960 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - 200 8029 text/javascript 3.8038ms
+INFO  2026-10-12 13:32:41,174 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-10-12 13:32:41,174 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'KTGKMD.Web.Host.Controllers.AntiForgeryController.SetCookie (KTGKMD.Web.Host)'
+INFO  2026-10-12 13:32:41,178 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller KTGKMD.Web.Host.Controllers.AntiForgeryController (KTGKMD.Web.Host).
+INFO  2026-10-12 13:32:41,189 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-10-12 13:32:41,201 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action KTGKMD.Web.Host.Controllers.AntiForgeryController.SetCookie (KTGKMD.Web.Host) in 22.5646ms
+INFO  2026-10-12 13:32:41,201 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'KTGKMD.Web.Host.Controllers.AntiForgeryController.SetCookie (KTGKMD.Web.Host)'
+INFO  2026-10-12 13:32:41,201 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 27.2194ms
+INFO  2026-10-12 13:32:41,223 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-10-12 13:32:41,256 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - - -
+INFO  2026-10-12 13:32:41,256 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2026-10-12 13:32:41,256 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - 200 628 image/png 0.7173ms
+INFO  2026-10-12 13:32:41,296 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 73.6939ms

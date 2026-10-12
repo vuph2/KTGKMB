@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#0b1c30","outline":"#737686","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#d3e4fe","on-error":"#ffffff","surface-variant":"#d3e4fe","surface-container-high":"#dce9ff","tertiary":"#ae0010","inverse-on-surface":"#eaf1ff","on-primary-container":"#eeefff","on-tertiary-fixed-variant":"#93000b","surface-dim":"#cbdbf5","inverse-primary":"#b4c5ff","tertiary-fixed":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","surface-tint":"#0053db","on-primary":"#ffffff","secondary-fixed-dim":"#62df7d","on-secondary":"#ffffff","on-secondary-container":"#007230","on-surface-variant":"#434655","primary":"#004ac6","inverse-surface":"#213145","on-tertiary-fixed":"#410002","on-tertiary":"#ffffff","surface-container":"#e5eeff","error":"#ba1a1a","secondary-fixed":"#7ffc97","surface-container-low":"#eff4ff","on-primary-fixed":"#00174b","error-container":"#ffdad6","secondary-container":"#7cf994","on-secondary-fixed-variant":"#005320","primary-container":"#2563eb","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","tertiary-container":"#d52022","tertiary-fixed-dim":"#ffb4ab","on-surface":"#0b1c30","on-tertiary-container":"#ffecea","outline-variant":"#c3c6d7","on-secondary-fixed":"#002109","primary-fixed":"#dbe1ff","surface":"#f8f9ff","background":"#f8f9ff","secondary":"#006e2d"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","margin":"1.5rem","space-xl":"2rem","gutter":"1.25rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"code-mono":["JetBrains Mono"],"passage-body":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-xl":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"]},fontSize:{"code-mono":["13px",{"lineHeight":"18px","fontWeight":"400"}],"passage-body":["15px",{"lineHeight":"26px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-surface-container-high selection:text-primary"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(15,23,42,0.06)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="TOEIC Lecturer Master Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRbRvFiFIQ_-ERGKysoZKQXpvfQDo_iN1_Bbfy0d6_jkC11ZqepmrEc7DYoh--s45_mqnPFMgUKspS4i59iLYyZpjHTDL5VjpJ61A2bG-RwmK2iMeQ9ffeRMGuvTAJd22okDuHQl_ufhvmdjFIHr4D76Vx0rLc1WK1zrmWMa2M6Dx9aIxfLXca2WlurtIC09F_SNAcCciEG1i4eUsv0NH_s0GSK4DpPcjD2eNXz1asjCo-nJryH9kT7g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">TOEIC Reading</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Hệ thống Quản lý Đề thi</span></div></div><div class="h-6 w-px bg-outline-variant/40 hidden md:block"></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="danh-sach-de" href="#">Danh sách đề</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="nhap-tu-word" href="#">Nhập từ Word</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="sua-de" href="#">Sửa đề</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="xem-truoc" href="#">Xem trước</a></nav></div><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-space-md py-2 rounded-lg shadow-sm transition-all" data-path="nhap-tu-word" href="#"><span class="material-symbols-outlined text-[18px]">cloud_upload</span><span>+ Nhập đề từ Word</span></a><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/40"><div class="hidden sm:flex flex-col items-end text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Thầy Hoàng Nam</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant leading-none font-medium">Giảng viên</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-64px)]"><div class="flex flex-col w-full">
+<!-- PREVIEW CONTROL PANEL -->
+<section class="w-full bg-surface-container-lowest shadow-sm z-30">
+<div class="w-full px-space-lg py-3 flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left: Breadcrumb & Title -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" data-path="danh-sach-de" href="#">Danh sách đề</a>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span class="text-on-surface font-medium">Xem trước học viên</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-code-mono text-label-sm">
+              PREVIEW MODE
+            </span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">
+              ETS TOEIC 2024 - Test 01
+            </h1>
+</div>
+</div>
+</div>
+<!-- Center: Lecturer Controls (Answer Toggle & Device Frame Switch) -->
+<div class="flex items-center gap-space-lg flex-wrap">
+<!-- Answer & Explanation Toggle -->
+<label class="flex items-center gap-space-sm cursor-pointer select-none px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="relative inline-flex items-center">
+<input checked="" class="sr-only peer" id="toggleAnswers" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+              Hiện đáp án & giải thích
+              <span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chế độ chấm bài trực tiếp</span>
+</div>
+</label>
+<!-- Segmented Frame Switcher -->
+<div class="inline-flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-surface-container-lowest shadow-sm font-label-md text-label-md text-primary transition-all" id="btnDesktop" type="button">
+<span class="material-symbols-outlined text-[17px]">desktop_windows</span>
+<span>Desktop (1440px)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md hover:text-on-surface font-label-md text-label-md text-on-surface-variant transition-all" id="btnMobile" type="button">
+<span class="material-symbols-outlined text-[17px]">smartphone</span>
+<span>Mobile (390px)</span>
+</button>
+</div>
+</div>
+<!-- Right Actions: Edit return -->
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-all" data-path="sua-de" href="#">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Quay lại sửa đề</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all" data-path="danh-sach-de" href="#">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Thoát xem trước</span>
+</a>
+</div>
+</div>
+</section>
+<!-- WORKSPACE WRAPPER (Handles Desktop vs Mobile Preview Frame) -->
+<section class="w-full py-6 px-space-md lg:px-space-lg flex justify-center bg-surface">
+<div class="w-full max-w-[1380px] transition-all duration-300 flex flex-col gap-space-md" id="simulatorContainer">
+<!-- STUDENT EXAM INTERFACE CHROME -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<!-- EXAM TOP BAR (Student perspective) -->
+<div class="w-full px-space-lg py-3.5 bg-surface-container-lowest flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">ETS TOEIC 2024 - Reading Test 01</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container text-primary">CHÍNH THỨC</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Thí sinh: <strong>Nguyen Van A</strong> (SBD: 2024-8841)</span>
+<span>•</span>
+<span class="px-2 py-0.2 rounded-md bg-surface-container-highest text-on-primary-fixed font-medium">Part 7: Đọc hiểu văn bản (Q147 - Q200)</span>
+</div>
+</div>
+</div>
+<!-- Countdown Simulation & Action -->
+<div class="flex items-center gap-space-lg shrink-0">
+<!-- Simulated Timer -->
+<div class="flex items-center gap-2.5 px-3.5 py-1.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px] animate-pulse">timer</span>
+<div class="flex flex-col items-start leading-none">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Thời gian còn lại</span>
+<span class="font-headline-md text-headline-md font-code-mono text-on-surface font-bold tracking-tight">74:12</span>
+</div>
+</div>
+<!-- Student Action -->
+<button class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Nộp bài thi</span>
+</button>
+</div>
+</div>
+<!-- EXAM CONTENT SPLIT-VIEW (Part 7: 50% Passage / 50% Questions) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg p-space-lg bg-surface" id="splitGrid">
+<!-- LEFT PANE: READING PASSAGE CARD -->
+<div class="flex flex-col gap-space-md">
+<!-- Context Header Banner -->
+<div class="flex items-center justify-between px-space-md py-2.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">description</span>
+<span class="font-semibold text-primary">Passage 1 of 1</span>
+<span class="text-on-surface-variant">| Questions 151-152 refer to the following email</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" title="Thu phóng chữ" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" title="Ghi chú" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+<!-- Reading Material Document -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md font-passage-body text-passage-body text-on-surface leading-relaxed">
+<!-- Document Header / Meta (Email Layout) -->
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-start justify-between">
+<div><span class="font-semibold text-on-surface">To:</span> All Department Managers <staff-mgmt@apexlogistics.com></div>
+<span class="text-on-surface-variant font-code-mono text-label-sm">October 14, 09:30 AM</span>
+</div>
+<div><span class="font-semibold text-on-surface">From:</span> Elena Rostova, Director of Human Resources <e.rostova@apexlogistics.com></div>
+<div><span class="font-semibold text-on-surface">Subject:</span> <span class="text-primary font-medium">Mandatory Quarterly Leadership Workshop - Session Registration</span></div>
+</div>
+<!-- Passage Content Body -->
+<div class="space-y-space-md pt-2">
+<p>Dear Team Leaders,</p>
+<p>
+                  As part of Apex Logistics' continued commitment to organizational agility and cross-border project workflows, the Q4 Leadership Development Seminar has been scheduled for 
+                  <strong class="font-semibold text-on-surface">Thursday, November 9</strong>, in Conference Hall B. 
+                </p>
+<p>
+                  This session will specifically target the integration of our new cloud-based inventory routing software. Participation is mandatory for all division heads, while senior project coordinators may attend optionally upon supervisor approval. 
+                </p>
+<!-- Embedded Schedule Box inside passage -->
+<div class="bg-surface-container-highest/60 rounded-lg p-space-md space-y-2">
+<div class="font-label-md text-label-md text-on-primary-fixed uppercase tracking-wide">Tentative Itinerary:</div>
+<ul class="space-y-1 text-body-sm font-body-sm">
+<li class="flex items-center gap-2">
+<span class="font-code-mono text-primary font-medium">09:00 - 10:30:</span>
+<span>Overview of AI dispatch protocols & compliance metrics</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="font-code-mono text-primary font-medium">10:45 - 12:15:</span>
+<span>Interactive workshop: Real-time conflict resolution</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="font-code-mono text-primary font-medium">12:15 - 01:30:</span>
+<span>Catered luncheon & executive networking session</span>
+</li>
+</ul>
+</div>
+<p>
+                  Please submit your department's attendee roster through the internal employee portal no later than 
+                  <span class="underline decoration-primary underline-offset-4 font-medium">Friday, October 27</span>. 
+                  Late submissions may incur a delay in provisioning digital workstation credentials for the practical simulation lab.
+                </p>
+<p class="pt-2 text-on-surface-variant">
+                  Best regards,<br/>
+<strong class="text-on-surface">Elena Rostova</strong><br/>
+                  Corporate HR Operations, Apex Logistics Corp.
+                </p>
+</div>
+<!-- Supplementary Visual Graphic/Document Token -->
+<div class="mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Authentic ETS Standard Reading Format (Single Passage - Email)</span>
+</div>
+<span class="font-code-mono text-label-sm text-outline">DOC-ID: #ETS24-P7-152</span>
+</div>
+</article>
+</div>
+<!-- RIGHT PANE: QUESTION & SIMULATED ANSWER CARDS -->
+<div class="flex flex-col gap-space-md">
+<!-- Question Navigation Header within Set -->
+<div class="flex items-center justify-between px-space-md py-2 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-code-mono text-label-sm font-semibold">Q 152</span>
+<span class="font-label-md text-label-md text-on-surface">Câu hỏi 152 / 200</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-primary font-label-sm text-label-sm px-2 py-1 rounded hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span>Đánh dấu xem lại</span>
+</button>
+<div class="h-4 w-px bg-outline-variant/60"></div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" title="Câu trước" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" title="Câu tiếp" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Question Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<!-- Question Stem -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<span>Part 7 • Detail Question</span>
+<span>•</span>
+<span class="text-secondary font-medium">Difficulty: Medium</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+                  What is indicated about the quarterly leadership workshop?
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  (Điều gì được chỉ ra về buổi hội thảo lãnh đạo hàng quý?)
+                </p>
+</div>
+<!-- 4 TOEIC Multiple Choice Options -->
+<div class="flex flex-col gap-space-sm" id="optionsContainer">
+<!-- Option A (Correct Answer Highlighted) -->
+<div class="answer-option group relative rounded-lg p-3.5 bg-surface-container-low transition-all shadow-sm">
+<label class="flex items-start gap-space-md cursor-pointer w-full">
+<div class="mt-0.5 w-6 h-6 rounded-full bg-secondary text-on-secondary font-code-mono text-label-md font-bold flex items-center justify-center shrink-0 shadow-sm">
+                      A
+                    </div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-on-surface font-semibold">
+                          It is mandatory for division heads to participate.
+                        </span>
+<!-- Lecturer preview badge -->
+<span class="lecturer-tag shrink-0 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                          Đáp án đúng: A
+                        </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                        (Bắt buộc các trưởng bộ phận phải tham gia.)
+                      </span>
+</div>
+</label>
+</div>
+<!-- Option B -->
+<div class="answer-option group relative rounded-lg p-3.5 bg-surface-container-low hover:bg-surface-container transition-all">
+<label class="flex items-start gap-space-md cursor-pointer w-full">
+<div class="mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary font-code-mono text-label-md font-bold flex items-center justify-center shrink-0 transition-colors">
+                      B
+                    </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface">
+                        It will take place over two consecutive days.
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                        (Nó sẽ diễn ra trong hai ngày liên tiếp.)
+                      </span>
+</div>
+</label>
+</div>
+<!-- Option C -->
+<div class="answer-option group relative rounded-lg p-3.5 bg-surface-container-low hover:bg-surface-container transition-all">
+<label class="flex items-start gap-space-md cursor-pointer w-full">
+<div class="mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary font-code-mono text-label-md font-bold flex items-center justify-center shrink-0 transition-colors">
+                      C
+                    </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface">
+                        Participants must bring their personal laptops.
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                        (Người tham gia bắt buộc phải mang theo máy tính xách tay cá nhân.)
+                      </span>
+</div>
+</label>
+</div>
+<!-- Option D -->
+<div class="answer-option group relative rounded-lg p-3.5 bg-surface-container-low hover:bg-surface-container transition-all">
+<label class="flex items-start gap-space-md cursor-pointer w-full">
+<div class="mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary font-code-mono text-label-md font-bold flex items-center justify-center shrink-0 transition-colors">
+                      D
+                    </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface">
+                        It has been postponed until late December.
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                        (Sự kiện đã bị hoãn lại cho đến cuối tháng 12.)
+                      </span>
+</div>
+</label>
+</div>
+</div>
+<!-- TEACHER EXPLANATION & VOCABULARY ACCORDION (Controlled by toggle) -->
+<div class="mt-1 flex flex-col gap-space-sm p-4 rounded-xl bg-surface-container-low shadow-sm" id="explanationBox">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span class="font-bold">GIẢI THÍCH CHI TIẾT & DẪN CHỨNG (DÀNH CHO GIẢNG VIÊN)</span>
+</div>
+<span class="font-code-mono text-label-sm text-on-surface-variant">Key Reference: Paragraph 2</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface space-y-2 leading-relaxed">
+<p>
+<strong class="font-semibold text-primary">Căn cứ trích đoạn bài đọc:</strong>
+<span class="italic text-on-surface-variant">"Participation is mandatory for all division heads, while senior project coordinators may attend optionally..."</span>
+</p>
+<p>
+<strong class="font-semibold text-primary">Phân tích suy luận:</strong> 
+                    Trong đề bài, từ <code class="bg-surface-container-highest px-1.5 py-0.5 rounded text-on-primary-fixed font-code-mono text-label-sm font-semibold">division heads</code> đồng nghĩa với <code class="bg-surface-container-highest px-1.5 py-0.5 rounded text-on-primary-fixed font-code-mono text-label-sm font-semibold">department managers</code>, và <code class="bg-surface-container-highest px-1.5 py-0.5 rounded text-on-primary-fixed font-code-mono text-label-sm font-semibold">mandatory</code> (bắt buộc) hoàn toàn tương ứng với phương án <strong>A</strong>.
+                  </p>
+<!-- Vocab Highlights -->
+<div class="pt-2 flex flex-wrap gap-2 items-center font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface-variant">Từ vựng ăn điểm:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-mono text-primary">mandatory = compulsory (adj)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-mono text-primary">division head = manager (n)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-mono text-primary">itinerary (n) lịch trình</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Controls within Question -->
+<div class="flex items-center justify-between pt-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Câu 151</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">clear_all</span>
+<span>Xoá lựa chọn</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all" type="button">
+<span>Lưu & Tiếp theo</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM EXAM QUESTION NAVIGATOR (101 to 200) -->
+<div class="w-full bg-surface-container-lowest p-space-lg shadow-sm">
+<!-- Navigator Top Meta & Legend -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-3.5">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Bảng điều hướng câu hỏi</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">Đã làm: 42/100</span>
+</div>
+<!-- Legend Items -->
+<div class="flex items-center gap-space-md flex-wrap text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded bg-primary"></span>
+<span class="text-on-surface-variant">Đã làm (42)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded bg-surface-container-low"></span>
+<span class="text-on-surface-variant">Chưa làm (56)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded bg-tertiary"></span>
+<span class="text-on-surface-variant">Đánh dấu cờ (2)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded bg-secondary"></span>
+<span class="text-on-surface-variant">Đang mở (Q152)</span>
+</div>
+</div>
+</div>
+<!-- Question Set Parts Tabs -->
+<div class="flex items-center gap-2 mb-3">
+<button class="px-3 py-1 rounded-md text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface">Part 5 (101-130)</button>
+<button class="px-3 py-1 rounded-md text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface">Part 6 (131-146)</button>
+<button class="px-3 py-1 rounded-md text-label-md font-label-md bg-primary-container text-on-primary font-semibold shadow-sm">Part 7 (147-200) - Đang xem</button>
+</div>
+<!-- Question Chips Grid (Curated representative matrix) -->
+<div class="grid grid-cols-10 sm:grid-cols-12 md:grid-cols-16 lg:grid-cols-20 gap-2 font-code-mono text-label-sm">
+<!-- 147 - 150 -->
+<button class="h-8 rounded bg-primary text-on-primary flex items-center justify-center font-medium shadow-sm hover:opacity-90" type="button">147</button>
+<button class="h-8 rounded bg-primary text-on-primary flex items-center justify-center font-medium shadow-sm hover:opacity-90" type="button">148</button>
+<button class="h-8 rounded bg-tertiary text-on-tertiary flex items-center justify-center font-medium shadow-sm relative" title="Có cờ đánh dấu" type="button">
+              149
+              <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-surface-container-lowest"></span>
+</button>
+<button class="h-8 rounded bg-primary text-on-primary flex items-center justify-center font-medium shadow-sm hover:opacity-90" type="button">150</button>
+<button class="h-8 rounded bg-primary text-on-primary flex items-center justify-center font-medium shadow-sm hover:opacity-90" type="button">151</button>
+<!-- 152 ACTIVE -->
+<button class="h-8 rounded bg-secondary text-on-secondary flex items-center justify-center font-bold shadow-sm ring-2 ring-secondary/40 ring-offset-2" type="button">152</button>
+<!-- 153 - 166 -->
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">153</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">154</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">155</button>
+<button class="h-8 rounded bg-tertiary text-on-tertiary flex items-center justify-center font-medium shadow-sm" type="button">156</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">157</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">158</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">159</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">160</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">161</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">162</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">163</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">164</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">165</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">166</button>
+<!-- 167 - 186 continuation -->
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">167</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">168</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">169</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">170</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">171</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">172</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">173</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">174</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">175</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">176</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">177</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">178</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">179</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">180</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">181</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">182</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">183</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">184</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">185</button>
+<button class="h-8 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center" type="button">186</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for Simulator Controls -->
+<script>
+    (function initPreviewSimulator() {
+      const toggle = document.getElementById('toggleAnswers');
+      const explanationBox = document.getElementById('explanationBox');
+      const lecturerTags = document.querySelectorAll('.lecturer-tag');
+      const btnDesktop = document.getElementById('btnDesktop');
+      const btnMobile = document.getElementById('btnMobile');
+      const container = document.getElementById('simulatorContainer');
+      const splitGrid = document.getElementById('splitGrid');
+
+      // 1. Toggle Answers & Explanations
+      if (toggle) {
+        toggle.addEventListener('change', function () {
+          const isChecked = this.checked;
+          if (explanationBox) {
+            explanationBox.style.display = isChecked ? 'flex' : 'none';
+          }
+          lecturerTags.forEach(tag => {
+            tag.style.display = isChecked ? 'inline-flex' : 'none';
+          });
+        });
+      }
+
+      // 2. Responsive Frame Switcher (Desktop 1440px vs Mobile 390px emulation)
+      if (btnDesktop && btnMobile && container) {
+        btnDesktop.addEventListener('click', function () {
+          // Set active state
+          btnDesktop.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-surface-container-lowest shadow-sm font-label-md text-label-md text-primary transition-all';
+          btnMobile.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md hover:text-on-surface font-label-md text-label-md text-on-surface-variant transition-all';
+          
+          container.classList.remove('max-w-[390px]');
+          container.classList.add('max-w-[1380px]');
+
+          if (splitGrid) {
+            splitGrid.classList.remove('grid-cols-1');
+            splitGrid.classList.add('lg:grid-cols-2');
+          }
+        });
+
+        btnMobile.addEventListener('click', function () {
+          // Set active state
+          btnMobile.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-surface-container-lowest shadow-sm font-label-md text-label-md text-primary transition-all';
+          btnDesktop.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md hover:text-on-surface font-label-md text-label-md text-on-surface-variant transition-all';
+          
+          container.classList.remove('max-w-[1380px]');
+          container.classList.add('max-w-[390px]');
+
+          if (splitGrid) {
+            splitGrid.classList.remove('lg:grid-cols-2');
+            splitGrid.classList.add('grid-cols-1');
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(15,23,42,0.03)] py-space-md"><div class="w-full px-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 Hệ thống Soạn thảo & Khảo thí TOEIC Reading. Dành cho Giảng viên.</span><div class="flex items-center gap-space-md"><span>Phiên bản v2.4 (Academic Release)</span><span class="inline-flex items-center gap-1 text-secondary font-medium"><span class="material-symbols-outlined text-[14px]">check_circle</span>Máy chủ ổn định</span></div></div></footer></body></html>
